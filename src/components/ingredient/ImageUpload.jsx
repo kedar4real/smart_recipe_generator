@@ -24,17 +24,15 @@ export function ImageUpload({ onIngredientsDetected }) {
   }
 
   return (
-    <div className="retro-card border border-white/40 p-5">
+    <div className="surface-panel p-5">
       <div className="flex items-center justify-between">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary-500">
-            Image pantry
+            Ingredient scan
           </p>
           <h3 className="text-lg font-semibold text-secondary-900">Upload your fridge</h3>
         </div>
-        <span className="text-2xl" aria-hidden="true">
-          📷
-        </span>
+        <img src="/images/icons/camera.svg" alt="" className="h-10 w-10" />
       </div>
 
       <div

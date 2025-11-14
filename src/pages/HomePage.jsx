@@ -72,13 +72,13 @@ export default function HomePage() {
     <div className="space-y-16">
       <section className="retro-card relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50 px-6 py-16 text-center sm:px-12">
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-secondary-400">
-          Kedar's Smart Gourmet Kitchen
+          Kedar Mashalkar's Smart Gourmet Kitchen
         </p>
         <h1 className="mt-4 text-4xl font-bold leading-tight text-secondary-900 sm:text-5xl">
-          Retro flair. Smart pantry magic.
+          Pantry staples, chef-level ideas.
         </h1>
         <p className="mt-4 text-lg text-secondary-600">
-          Start with your pantry, add a photo, and let our gourmet assistant craft the perfect menu.
+          Start with what you already own, add a quick photo if you like, and let the kitchen companion do the menu planning.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <button

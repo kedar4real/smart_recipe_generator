@@ -11,6 +11,7 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
   const userRating = getRating(recipe.id)
   const baseRating = recipe.rating || 4.5
   const displayRating = userRating || baseRating
+  const favoriteIcon = isFavorite ? '/images/icons/heart-filled.svg' : '/images/icons/heart-outline.svg'
 
   return (
     <article className="group overflow-hidden rounded-[28px] border border-white/50 bg-white/95 p-4 shadow-card backdrop-blur transition duration-300 hover:-translate-y-1.5 hover:shadow-retro">
@@ -34,9 +35,9 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
           type="button"
           aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
           onClick={() => onToggleFavorite?.(recipe.id)}
-          className="absolute right-4 top-4 rounded-full bg-white/95 p-2 text-lg text-primary-500 shadow hover:bg-primary-50"
+          className="absolute right-4 top-4 rounded-full bg-white/95 p-2 shadow hover:bg-primary-50"
         >
-          {isFavorite ? '❤️' : '🤍'}
+          <img src={favoriteIcon} alt="" className="h-7 w-7" />
         </button>
       </div>
 
@@ -56,9 +57,9 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
         <p className="text-sm text-secondary-600 line-clamp-2">{recipe.description}</p>
 
         <div className="grid grid-cols-3 gap-2 text-xs font-medium text-secondary-600">
-          <InfoChip icon="⏱" label={`${recipe.totalTime}m`} />
-          <InfoChip icon="🍽" label={`${recipe.servings} servings`} />
-          <InfoChip icon="🥣" label={recipe.cuisine} />
+          <InfoChip iconSrc="/images/icons/clock.svg" label={`${recipe.totalTime}m`} />
+          <InfoChip iconSrc="/images/icons/servings.svg" label={`${recipe.servings} servings`} />
+          <InfoChip iconSrc="/images/icons/spoon.svg" label={recipe.cuisine} />
         </div>
 
         <div>
@@ -89,10 +90,10 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
   )
 }
 
-function InfoChip({ icon, label }) {
+function InfoChip({ iconSrc, label }) {
   return (
     <div className="flex items-center gap-1 rounded-full bg-secondary-50 px-3 py-1 capitalize">
-      <span aria-hidden="true">{icon}</span>
+      <img src={iconSrc} alt="" className="h-4 w-4" />
       {label}
     </div>
   )

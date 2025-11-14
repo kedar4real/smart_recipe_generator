@@ -31,11 +31,10 @@ export async function recognizeIngredientsFromImage(file) {
     return data.ingredients || []
   }
 
-  await new Promise((resolve) => setTimeout(resolve, 1000))
-  return [
-    { name: 'tomato', confidence: 0.93 },
-    { name: 'garlic', confidence: 0.88 },
-    { name: 'basil', confidence: 0.82 },
-    { name: 'olive oil', confidence: 0.77 },
-  ]
+  const response = await fetch('/api/mock-ingredients.json')
+  if (!response.ok) {
+    throw new Error('Unable to analyze image right now.')
+  }
+  const data = await response.json()
+  return data.ingredients || []
 }

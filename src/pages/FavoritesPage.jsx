@@ -14,7 +14,7 @@ export default function FavoritesPage() {
   if (favorites.length === 0) {
     return (
       <EmptyState
-        icon="❤️"
+        icon="/images/icons/heart-filled.svg"
         title="No favorites yet"
         message="Tap the heart on any recipe to save it here for quick access."
       />

@@ -24,5 +24,11 @@ Body: file=<binary image>
 - Returning an empty array is valid if nothing is detected.
 - Error responses should use standard HTTP codes. The client displays a friendly message for 4xx/5xx and a specific message for `413 Payload Too Large`.
 
-### Local Stub
-If `VITE_API_URL` is not set the app falls back to a mocked list after a short delay so the UI can be developed offline.
+### Hosted mock
+When no `VITE_API_URL` is provided the app now fetches from a real static endpoint that ships with the project:
+
+```
+GET https://<app-domain>/api/mock-ingredients.json
+```
+
+You can edit `public/api/mock-ingredients.json` to change the default suggestions or deploy your own API and point `VITE_API_URL` to it.

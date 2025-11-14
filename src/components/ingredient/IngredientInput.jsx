@@ -58,7 +58,7 @@ export function IngredientInput({
   }
 
   return (
-    <div className="retro-card border border-white/50 px-6 py-6 shadow-card">
+    <div className="surface-panel px-6 py-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary-500">
@@ -78,11 +78,9 @@ export function IngredientInput({
       </div>
 
       <div className="mt-4 flex flex-col gap-3">
-        <div className="flex flex-col gap-3 rounded-3xl border border-secondary-100 bg-white px-4 py-3 shadow-inner sm:flex-row sm:items-center">
+        <div className="surface-panel border border-transparent bg-white/90 px-4 py-3 sm:flex sm:items-center sm:justify-between">
           <div className="flex flex-1 items-center gap-3">
-            <span className="text-lg" aria-hidden="true">
-              ✍️
-            </span>
+            <img src="/images/icons/sparkle.svg" alt="" className="h-8 w-8" />
             <input
               type="text"
               value={inputValue}
@@ -117,7 +115,7 @@ export function IngredientInput({
         )}
 
         {ingredients.length > 0 && (
-          <div className="rounded-3xl border border-secondary-100 bg-secondary-50/60 p-4">
+          <div className="surface-panel border border-transparent bg-secondary-50/70 p-4">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary-500">
               Your basket
             </p>

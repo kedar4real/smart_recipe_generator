@@ -1,4 +1,4 @@
-# Kedar's Smart Gourmet Kitchen
+# Kedar Mashalkar's Smart Gourmet Kitchen
 
 Retro-inspired recipe discovery app that matches whatever is in your pantry with curated dishes, ingredient recognition, and smart substitution tips.
 

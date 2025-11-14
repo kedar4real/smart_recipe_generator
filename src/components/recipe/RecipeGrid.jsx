@@ -21,7 +21,7 @@ export function RecipeGrid({
   if (results.length === 0) {
     return (
       <EmptyState
-        icon="🍽️"
+        icon="/images/icons/empty-bowl.svg"
         title="No recipes found"
         message="Try updating filters, add more pantry items, or let the salad bowl inspire you."
         actionLabel={onClearFilters ? 'Clear filters' : undefined}

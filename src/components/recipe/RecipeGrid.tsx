@@ -21,7 +21,7 @@ export function RecipeGrid({ recipes, loading }: RecipeGridProps) {
   if (recipes.length === 0) {
     return (
       <div className="text-center py-12">
-        <div className="text-6xl mb-4">🍽️</div>
+        <img src="/images/icons/empty-bowl.svg" alt="" className="h-16 w-16 mx-auto mb-4" />
         <h3 className="text-xl font-semibold text-secondary-900 mb-2">No recipes found</h3>
         <p className="text-secondary-600">
           Try adjusting your ingredients or filters to find more recipes.

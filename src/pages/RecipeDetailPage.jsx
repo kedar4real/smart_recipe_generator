@@ -78,7 +78,7 @@ export default function RecipeDetailPage() {
   if (!recipe) {
     return (
       <div className="rounded-3xl border border-dashed border-secondary-200 bg-white/95 p-16 text-center shadow-inner">
-        <div className="text-6xl mb-4">🤔</div>
+        <img src="/images/icons/empty-bowl.svg" alt="" className="mx-auto mb-4 h-16 w-16" />
         <h1 className="text-3xl font-semibold text-secondary-900 mb-3">Recipe not found</h1>
         <p className="text-secondary-600 mb-8">
           We couldn&apos;t find the recipe you were looking for. Try exploring other dishes instead.

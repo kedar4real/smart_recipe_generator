@@ -5,18 +5,30 @@ import { RecipeFilters } from '@/components/search/RecipeFilters.jsx'
 import { RecipeSort } from '@/components/search/RecipeSort.jsx'
 import { RecipeGrid } from '@/components/recipe/RecipeGrid.jsx'
 import { ActiveFiltersBar } from '@/components/search/ActiveFiltersBar.jsx'
+import { EmptyState } from '@/components/common/EmptyState.jsx'
 import { SmartSuggestions } from '@/components/search/SmartSuggestions.jsx'
 import { useRecipeSearch } from '@/hooks/useRecipeSearch.js'
 import { useFavorites } from '@/hooks/useFavorites.js'
 import { useFilters } from '@/contexts/FilterContext.jsx'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export default function RecipeSearchPage() {
-  const [ingredients, setIngredients] = useState([])
+  const location = useLocation()
+  const navigate = useNavigate()
+  const [ingredients, setIngredients] = useState(location.state?.ingredients ?? [])
   const { filters, sort, updateFilters, setSort, resetFilters } = useFilters()
   const { favorites, toggleFavorite } = useFavorites()
 
   const { results, loading, error } = useRecipeSearch(ingredients, filters, sort)
   const highlightedResults = useMemo(() => results.slice(0, 24), [results])
+
+  useEffect(() => {
+    if (location.state?.ingredients) {
+      setIngredients(location.state.ingredients)
+      navigate(location.pathname, { replace: true, state: null })
+    }
+  }, [location.state, location.pathname, navigate])
 
   const handleDetectedIngredients = (detected) => {
     if (!detected || detected.length === 0) return
@@ -67,13 +79,11 @@ export default function RecipeSearchPage() {
 
         {showNoResults ? (
           <>
-            <div className="rounded-2xl border border-dashed border-slate-200 bg-white p-12 text-center">
-              <div className="text-6xl mb-4">🥄</div>
-              <h3 className="text-xl font-semibold text-secondary-900">No recipes found</h3>
-              <p className="mt-2 text-secondary-600">
-                Try adjusting your filters or add more ingredients to broaden the match.
-              </p>
-            </div>
+            <EmptyState
+              icon="/images/icons/empty-bowl.svg"
+              title="No recipes found"
+              message="Try adjusting your filters or add more ingredients to broaden the match."
+            />
             <SmartSuggestions
               userIngredients={ingredients}
               onAddIngredient={(ingredient) =>

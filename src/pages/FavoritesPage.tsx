@@ -17,7 +17,7 @@ export function FavoritesPage() {
     return (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center">
-          <div className="text-6xl mb-4">❤️</div>
+        <img src="/images/icons/heart-filled.svg" alt="" className="mx-auto mb-4 h-16 w-16" />
           <h2 className="text-2xl font-semibold text-secondary-900 mb-2">No favorites yet</h2>
           <p className="text-secondary-600">
             Start adding recipes to your favorites to see them here.

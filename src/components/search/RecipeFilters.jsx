@@ -20,7 +20,7 @@ export function RecipeFilters({ filters, onChange }) {
   }
 
   return (
-    <aside className="space-y-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <aside className="space-y-6 surface-panel p-6">
       <div>
         <h3 className="text-sm font-semibold uppercase tracking-wide text-secondary-500">
           Dietary preferences
@@ -50,8 +50,8 @@ export function RecipeFilters({ filters, onChange }) {
               onClick={() => toggleCuisine(cuisine)}
               className={`rounded-full border px-3 py-1 text-sm transition ${
                 filters.cuisines.includes(cuisine)
-                  ? 'border-primary-500 bg-primary-50 text-primary-700'
-                  : 'border-slate-200 text-secondary-600 hover:border-primary-200'
+                  ? 'border-primary-500 bg-primary-500/10 text-primary-700'
+                  : 'border-slate-200 text-secondary-600 hover:border-primary-200 hover:text-primary-600'
               }`}
             >
               {cuisine}

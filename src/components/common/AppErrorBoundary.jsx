@@ -19,7 +19,7 @@ export class AppErrorBoundary extends Component {
       return (
         <div className="min-h-screen flex items-center justify-center bg-secondary-50">
           <div className="retro-card px-8 py-10 text-center">
-            <p className="text-6xl mb-4">😵‍💫</p>
+            <img src="/images/icons/empty-bowl.svg" alt="" className="mx-auto mb-4 h-16 w-16" />
             <h1 className="text-2xl font-semibold text-secondary-900">Something went wrong</h1>
             <p className="mt-2 text-secondary-600">
               Please refresh the page or try again in a moment.

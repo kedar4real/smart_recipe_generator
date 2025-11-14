@@ -5,19 +5,22 @@
 :root {
   font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     sans-serif;
-  background-color: #fdf4e3;
   color: #2d1a0b;
+  --surface-light: rgba(255, 255, 255, 0.92);
+  --surface-tint: rgba(248, 239, 228, 0.85);
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #fdf4e3;
-  background-image: radial-gradient(circle at 20% 20%, rgba(255, 218, 185, 0.35), transparent 55%),
-    radial-gradient(circle at 80% 0%, rgba(180, 231, 211, 0.25), transparent 60%),
+  background-color: #f7efe1;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(249, 213, 177, 0.35), transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(198, 226, 213, 0.25), transparent 60%),
+    linear-gradient(145deg, #fff6ec 0%, #fbeeda 55%, #f6e5d3 100%),
     url('/images/hero/salad-bowl.jpg');
-  background-size: auto, auto, cover;
-  background-attachment: fixed;
+  background-size: auto, auto, cover, cover;
+  background-attachment: fixed, fixed, fixed, fixed;
   background-position: center;
 }
 
@@ -35,18 +38,21 @@ body::after {
 }
 
 .retro-card {
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, var(--surface-light), var(--surface-tint));
   border-radius: 32px;
-  box-shadow: 0 25px 80px rgba(61, 38, 21, 0.18);
-  backdrop-filter: blur(15px);
+  box-shadow: 0 30px 80px rgba(70, 52, 36, 0.2);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .retro-pill {
   border-radius: 999px;
-  background: linear-gradient(120deg, #ffeacc, #ffd1a3);
-  color: #7b2f1a;
+  background: linear-gradient(135deg, #ffe3ca, #ffd3b0);
+  color: #69330d;
   font-weight: 600;
-  box-shadow: 0 12px 24px rgba(123, 47, 26, 0.2);
+  box-shadow:
+    0 6px 15px rgba(181, 107, 26, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .retro-grid {
@@ -59,4 +65,11 @@ body::after {
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.45) inset,
     0 18px 35px rgba(37, 21, 10, 0.25);
+}
+
+.surface-panel {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.95), rgba(247, 239, 231, 0.85));
+  border: 1px solid rgba(227, 214, 200, 0.8);
+  border-radius: 24px;
+  box-shadow: 0 15px 45px rgba(78, 55, 34, 0.12);
 }

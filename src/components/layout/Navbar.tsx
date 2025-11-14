@@ -6,8 +6,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl">🍳</div>
-            <span className="text-xl font-bold text-secondary-900">Smart Recipe Generator</span>
+            <img src="/images/logo.svg" alt="Kedar Mashalkar logo" className="h-10 w-10 rounded-xl" />
+            <span className="text-xl font-bold text-secondary-900">Kedar Mashalkar&apos;s Kitchen</span>
           </Link>
           <div className="flex items-center space-x-4">
             <Link
