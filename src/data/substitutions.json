@@ -1,0 +1,303 @@
+[
+  {
+    "ingredient": "sour cream",
+    "substitutes": [
+      {
+        "name": "greek yogurt",
+        "ratio": "1:1",
+        "notes": "Similar creaminess and tang, perfect for dips and baking"
+      },
+      {
+        "name": "cottage cheese",
+        "ratio": "1:1",
+        "notes": "Blend until smooth for best texture"
+      },
+      {
+        "name": "buttermilk + butter",
+        "ratio": "3/4 cup buttermilk + 1/4 cup melted butter",
+        "notes": "Great for baking"
+      }
+    ]
+  },
+  {
+    "ingredient": "butter",
+    "substitutes": [
+      {
+        "name": "olive oil",
+        "ratio": "3/4 cup oil for 1 cup butter",
+        "notes": "Best for savory dishes"
+      },
+      {
+        "name": "coconut oil",
+        "ratio": "1:1",
+        "notes": "Solid at room temperature, good for baking"
+      },
+      {
+        "name": "applesauce",
+        "ratio": "1/2 cup for 1 cup butter",
+        "notes": "Reduces fat in baked goods"
+      }
+    ]
+  },
+  {
+    "ingredient": "eggs",
+    "substitutes": [
+      {
+        "name": "flax eggs",
+        "ratio": "1 tbsp ground flaxseed + 3 tbsp water per egg",
+        "notes": "Let sit 5 minutes to gel, good for binding"
+      },
+      {
+        "name": "applesauce",
+        "ratio": "1/4 cup per egg",
+        "notes": "Best for moist baked goods"
+      },
+      {
+        "name": "banana",
+        "ratio": "1/4 mashed banana per egg",
+        "notes": "Adds moisture and sweetness"
+      }
+    ]
+  },
+  {
+    "ingredient": "milk",
+    "substitutes": [
+      {
+        "name": "almond milk",
+        "ratio": "1:1",
+        "notes": "Light, nutty flavor"
+      },
+      {
+        "name": "oat milk",
+        "ratio": "1:1",
+        "notes": "Creamy texture, good for coffee and baking"
+      },
+      {
+        "name": "coconut milk",
+        "ratio": "1:1",
+        "notes": "Richer flavor, great for curries"
+      }
+    ]
+  },
+  {
+    "ingredient": "flour",
+    "substitutes": [
+      {
+        "name": "almond flour",
+        "ratio": "1:1",
+        "notes": "Gluten-free, adds nutty flavor"
+      },
+      {
+        "name": "coconut flour",
+        "ratio": "1/4 cup coconut flour for 1 cup regular flour",
+        "notes": "Very absorbent, adjust liquid accordingly"
+      },
+      {
+        "name": "oat flour",
+        "ratio": "1:1",
+        "notes": "Made from ground oats, good for baking"
+      }
+    ]
+  },
+  {
+    "ingredient": "sugar",
+    "substitutes": [
+      {
+        "name": "honey",
+        "ratio": "3/4 cup honey for 1 cup sugar",
+        "notes": "Reduce liquid by 1/4 cup"
+      },
+      {
+        "name": "maple syrup",
+        "ratio": "3/4 cup for 1 cup sugar",
+        "notes": "Adds rich flavor, reduce liquid slightly"
+      },
+      {
+        "name": "coconut sugar",
+        "ratio": "1:1",
+        "notes": "Lower glycemic index, similar taste"
+      }
+    ]
+  },
+  {
+    "ingredient": "soy sauce",
+    "substitutes": [
+      {
+        "name": "tamari",
+        "ratio": "1:1",
+        "notes": "Gluten-free alternative with similar flavor"
+      },
+      {
+        "name": "coconut aminos",
+        "ratio": "1:1",
+        "notes": "Slightly sweeter, gluten-free"
+      },
+      {
+        "name": "worcestershire sauce",
+        "ratio": "1:1",
+        "notes": "Different flavor profile but similar umami"
+      }
+    ]
+  },
+  {
+    "ingredient": "pasta",
+    "substitutes": [
+      {
+        "name": "zucchini noodles",
+        "ratio": "1:1",
+        "notes": "Low-carb, spiralize fresh zucchini"
+      },
+      {
+        "name": "spaghetti squash",
+        "ratio": "1:1",
+        "notes": "Bake and shred into strands"
+      },
+      {
+        "name": "rice",
+        "ratio": "1:1",
+        "notes": "Works well with Asian dishes"
+      }
+    ]
+  },
+  {
+    "ingredient": "rice",
+    "substitutes": [
+      {
+        "name": "cauliflower rice",
+        "ratio": "1:1",
+        "notes": "Low-carb, pulse cauliflower until rice-like"
+      },
+      {
+        "name": "quinoa",
+        "ratio": "1:1",
+        "notes": "Higher protein, similar cooking method"
+      },
+      {
+        "name": "bulgur",
+        "ratio": "1:1",
+        "notes": "Nutty flavor, cooks quickly"
+      }
+    ]
+  },
+  {
+    "ingredient": "chicken",
+    "substitutes": [
+      {
+        "name": "tofu",
+        "ratio": "1:1",
+        "notes": "Marinate firm tofu for best flavor"
+      },
+      {
+        "name": "tempeh",
+        "ratio": "1:1",
+        "notes": "Nutty flavor, great in stir-fries"
+      },
+      {
+        "name": "mushrooms",
+        "ratio": "1:1",
+        "notes": "Portobello or shiitake work well"
+      }
+    ]
+  },
+  {
+    "ingredient": "cheese",
+    "substitutes": [
+      {
+        "name": "nutritional yeast",
+        "ratio": "Sprinkle to taste",
+        "notes": "Cheesy flavor, great for vegan dishes"
+      },
+      {
+        "name": "cashew cream",
+        "ratio": "Blend soaked cashews",
+        "notes": "Creamy texture, good for sauces"
+      },
+      {
+        "name": "vegan cheese",
+        "ratio": "1:1",
+        "notes": "Many options available in stores"
+      }
+    ]
+  },
+  {
+    "ingredient": "parmesan cheese",
+    "substitutes": [
+      {
+        "name": "pecorino romano",
+        "ratio": "1:1",
+        "notes": "Similar sharp, salty flavor"
+      },
+      {
+        "name": "nutritional yeast + salt",
+        "ratio": "Mix to taste",
+        "notes": "Vegan alternative with cheesy flavor"
+      },
+      {
+        "name": "asiago",
+        "ratio": "1:1",
+        "notes": "Slightly milder but works well"
+      }
+    ]
+  },
+  {
+    "ingredient": "cream",
+    "substitutes": [
+      {
+        "name": "coconut cream",
+        "ratio": "1:1",
+        "notes": "Rich and creamy, great for curries"
+      },
+      {
+        "name": "cashew cream",
+        "ratio": "1:1",
+        "notes": "Blend soaked cashews until smooth"
+      },
+      {
+        "name": "milk + butter",
+        "ratio": "3/4 cup milk + 1/4 cup melted butter",
+        "notes": "Works in most recipes"
+      }
+    ]
+  },
+  {
+    "ingredient": "onion",
+    "substitutes": [
+      {
+        "name": "shallots",
+        "ratio": "1:1",
+        "notes": "Milder, sweeter flavor"
+      },
+      {
+        "name": "leeks",
+        "ratio": "1:1",
+        "notes": "Use white and light green parts"
+      },
+      {
+        "name": "onion powder",
+        "ratio": "1 tsp for 1 medium onion",
+        "notes": "Use when texture isn't important"
+      }
+    ]
+  },
+  {
+    "ingredient": "garlic",
+    "substitutes": [
+      {
+        "name": "garlic powder",
+        "ratio": "1/8 tsp for 1 clove",
+        "notes": "Convenient but less intense flavor"
+      },
+      {
+        "name": "garlic salt",
+        "ratio": "1/4 tsp for 1 clove",
+        "notes": "Reduce salt elsewhere in recipe"
+      },
+      {
+        "name": "shallots",
+        "ratio": "1:1",
+        "notes": "Milder flavor, use more if needed"
+      }
+    ]
+  }
+]
+

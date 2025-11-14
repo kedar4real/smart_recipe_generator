@@ -1,0 +1,1377 @@
+[
+  {
+    "id": "spaghetti-carbonara",
+    "title": "Classic Spaghetti Carbonara",
+    "description": "A traditional Italian pasta dish with eggs, cheese, pancetta, and black pepper.",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Italian",
+    "difficulty": "medium",
+    "prepTime": 10,
+    "cookTime": 20,
+    "totalTime": 30,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "spaghetti",
+        "amount": 400,
+        "unit": "g",
+        "notes": "or linguine"
+      },
+      {
+        "name": "pancetta",
+        "amount": 200,
+        "unit": "g",
+        "notes": "or bacon"
+      },
+      {
+        "name": "eggs",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "name": "parmesan cheese",
+        "amount": 100,
+        "unit": "g",
+        "notes": "grated"
+      },
+      {
+        "name": "black pepper",
+        "amount": 1,
+        "unit": "tsp",
+        "notes": "freshly ground"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "clove"
+      },
+      {
+        "name": "olive oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to a boil and cook spaghetti until al dente.",
+      "Cook pancetta in olive oil until crisp, add garlic for 1 minute and remove from heat.",
+      "Whisk eggs, parmesan, and cracked pepper in a bowl.",
+      "Toss hot pasta with pancetta, then add egg mixture, stirring quickly. Loosen with pasta water.",
+      "Season to taste and serve immediately."
+    ],
+    "nutrition": {
+      "calories": 520,
+      "protein": 24,
+      "carbs": 52,
+      "fat": 22,
+      "fiber": 2,
+      "sodium": 680
+    },
+    "dietary": [],
+    "tags": [
+      "pasta",
+      "quick",
+      "comfort-food"
+    ],
+    "coreIngredients": [
+      "spaghetti",
+      "eggs",
+      "parmesan cheese",
+      "pancetta"
+    ],
+    "createdAt": "2024-01-15"
+  },
+  {
+    "id": "chicken-stir-fry",
+    "title": "Quick Chicken Stir-Fry",
+    "description": "Tender chicken with crisp vegetables in a savory soy-ginger sauce.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Asian",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "amount": 500,
+        "unit": "g",
+        "notes": "cut into strips"
+      },
+      {
+        "name": "soy sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "ginger",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "minced"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "clove",
+        "notes": "minced"
+      },
+      {
+        "name": "bell pepper",
+        "amount": 2,
+        "unit": "piece",
+        "notes": "sliced"
+      },
+      {
+        "name": "broccoli",
+        "amount": 200,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Marinate chicken with soy sauce and ginger for 10 minutes.",
+      "Stir-fry chicken until browned, add vegetables and cook until crisp-tender.",
+      "Add garlic, toss with remaining sauce, and serve over rice."
+    ],
+    "nutrition": {
+      "calories": 380,
+      "protein": 35,
+      "carbs": 35,
+      "fat": 10,
+      "fiber": 4,
+      "sodium": 920
+    },
+    "dietary": [
+      "gluten-free"
+    ],
+    "tags": [
+      "quick",
+      "healthy",
+      "protein"
+    ],
+    "coreIngredients": [
+      "chicken breast",
+      "soy sauce",
+      "ginger"
+    ],
+    "createdAt": "2024-01-20"
+  },
+  {
+    "id": "vegetable-curry",
+    "title": "Creamy Vegetable Curry",
+    "description": "A rich and aromatic curry loaded with seasonal vegetables in a coconut milk base.",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Indian",
+    "difficulty": "medium",
+    "prepTime": 20,
+    "cookTime": 30,
+    "totalTime": 50,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "cauliflower",
+        "amount": 1,
+        "unit": "head"
+      },
+      {
+        "name": "sweet potato",
+        "amount": 2,
+        "unit": "piece",
+        "notes": "cubed"
+      },
+      {
+        "name": "chickpeas",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "coconut milk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "curry paste",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      "Sauté curry paste, add vegetables, chickpeas, and coconut milk.",
+      "Simmer 20 minutes until tender and serve over rice."
+    ],
+    "nutrition": {
+      "calories": 430,
+      "protein": 14,
+      "carbs": 48,
+      "fat": 20,
+      "fiber": 9,
+      "sodium": 620
+    },
+    "dietary": [
+      "vegan",
+      "gluten-free"
+    ],
+    "tags": [
+      "comfort-food",
+      "meal-prep"
+    ],
+    "coreIngredients": [
+      "cauliflower",
+      "sweet potato",
+      "coconut milk"
+    ],
+    "createdAt": "2024-02-02"
+  },
+  {
+    "id": "mediterranean-quinoa-salad",
+    "title": "Mediterranean Quinoa Salad",
+    "description": "Protein-packed quinoa tossed with crunchy vegetables and a lemon herb dressing.",
+    "image": "https://images.unsplash.com/photo-1505575967455-40e256f73376?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Mediterranean",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "cucumber",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "name": "cherry tomatoes",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "feta",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      "Cook quinoa, toss with chopped vegetables, feta, and lemon dressing."
+    ],
+    "nutrition": {
+      "calories": 360,
+      "protein": 13,
+      "carbs": 34,
+      "fat": 18,
+      "fiber": 6,
+      "sodium": 540
+    },
+    "dietary": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "tags": [
+      "fresh",
+      "lunch"
+    ],
+    "coreIngredients": [
+      "quinoa",
+      "cucumber",
+      "feta"
+    ],
+    "createdAt": "2024-02-05"
+  },
+  {
+    "id": "mushroom-risotto",
+    "title": "Wild Mushroom Risotto",
+    "description": "Creamy arborio rice slowly simmered with mushrooms, white wine, and parmesan.",
+    "image": "https://images.unsplash.com/photo-1476127397721-481ab80f0b45?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Italian",
+    "difficulty": "medium",
+    "prepTime": 15,
+    "cookTime": 30,
+    "totalTime": 45,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "arborio rice",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "mixed mushrooms",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "vegetable broth",
+        "amount": 1,
+        "unit": "liter"
+      },
+      {
+        "name": "white wine",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "parmesan",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Toast rice in oil, deglaze with wine, add warm broth gradually until creamy, fold in mushrooms and cheese."
+    ],
+    "nutrition": {
+      "calories": 480,
+      "protein": 15,
+      "carbs": 64,
+      "fat": 16,
+      "fiber": 3,
+      "sodium": 640
+    },
+    "dietary": [
+      "vegetarian"
+    ],
+    "tags": [
+      "comfort-food"
+    ],
+    "coreIngredients": [
+      "arborio rice",
+      "mushrooms",
+      "parmesan"
+    ],
+    "createdAt": "2024-02-10"
+  },
+  {
+    "id": "beef-bulgogi-bowls",
+    "title": "Korean Beef Bulgogi Bowls",
+    "description": "Thinly sliced beef marinated in a sweet-savory sauce, served over rice with pickled veggies.",
+    "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Korean",
+    "difficulty": "medium",
+    "prepTime": 20,
+    "cookTime": 15,
+    "totalTime": 35,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "ribeye steak",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "soy sauce",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "brown sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "clove"
+      },
+      {
+        "name": "sesame oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      "Marinate beef, stir-fry over high heat, and serve over rice with vegetables."
+    ],
+    "nutrition": {
+      "calories": 520,
+      "protein": 32,
+      "carbs": 58,
+      "fat": 18,
+      "fiber": 3,
+      "sodium": 980
+    },
+    "dietary": [],
+    "tags": [
+      "bowls",
+      "meal-prep"
+    ],
+    "coreIngredients": [
+      "ribeye",
+      "soy sauce",
+      "rice"
+    ],
+    "createdAt": "2024-02-12"
+  },
+  {
+    "id": "shakshuka",
+    "title": "Smoky Tomato Shakshuka",
+    "description": "Poached eggs nestled in a spiced tomato and pepper sauce, perfect for brunch.",
+    "image": "https://images.unsplash.com/photo-1506086679524-493c64fdfaa6?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Middle Eastern",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 25,
+    "totalTime": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "eggs",
+        "amount": 6,
+        "unit": "piece"
+      },
+      {
+        "name": "crushed tomatoes",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "red bell pepper",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "piece"
+      }
+    ],
+    "instructions": [
+      "Simmer tomatoes with peppers and spices, crack in eggs, cover until set."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 15,
+      "carbs": 18,
+      "fat": 16,
+      "fiber": 4,
+      "sodium": 720
+    },
+    "dietary": [
+      "vegetarian"
+    ],
+    "tags": [
+      "brunch"
+    ],
+    "coreIngredients": [
+      "eggs",
+      "tomatoes",
+      "peppers"
+    ],
+    "createdAt": "2024-02-14"
+  },
+  {
+    "id": "grilled-salmon-quinoa",
+    "title": "Grilled Salmon with Citrus Quinoa",
+    "description": "Seared salmon fillets served over citrusy quinoa with charred asparagus.",
+    "image": "https://images.unsplash.com/photo-1481931098730-318b6bb76272?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "American",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 20,
+    "totalTime": 35,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "salmon fillets",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "name": "quinoa",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "asparagus",
+        "amount": 1,
+        "unit": "bunch"
+      },
+      {
+        "name": "orange juice",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "olive oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      "Cook quinoa with water and orange juice.",
+      "Grill salmon and asparagus until cooked, serve over quinoa."
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 34,
+      "carbs": 32,
+      "fat": 20,
+      "fiber": 5,
+      "sodium": 520
+    },
+    "dietary": [
+      "gluten-free"
+    ],
+    "tags": [
+      "high-protein",
+      "fresh"
+    ],
+    "coreIngredients": [
+      "salmon",
+      "quinoa",
+      "asparagus"
+    ],
+    "createdAt": "2024-02-17"
+  },
+  {
+    "id": "lentil-sweet-potato-stew",
+    "title": "Lentil & Sweet Potato Stew",
+    "description": "Hearty lentil stew with sweet potatoes, kale, and smoky spices.",
+    "image": "https://images.unsplash.com/photo-1512621776951-4b1ef6bc0c81?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Global",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 35,
+    "totalTime": 50,
+    "servings": 6,
+    "ingredients": [
+      {
+        "name": "green lentils",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "sweet potato",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "name": "kale",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "vegetable broth",
+        "amount": 1.5,
+        "unit": "liter"
+      }
+    ],
+    "instructions": [
+      "Simmer lentils, sweet potatoes, and broth until tender, stir in kale."
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 18,
+      "carbs": 52,
+      "fat": 6,
+      "fiber": 12,
+      "sodium": 620
+    },
+    "dietary": [
+      "vegan",
+      "gluten-free"
+    ],
+    "tags": [
+      "meal-prep",
+      "soup"
+    ],
+    "coreIngredients": [
+      "lentils",
+      "sweet potato",
+      "kale"
+    ],
+    "createdAt": "2024-02-19"
+  },
+  {
+    "id": "pesto-roasted-vegetable-pasta",
+    "title": "Pesto Pasta with Roasted Vegetables",
+    "description": "Herby basil pesto tossed with roasted zucchini, peppers, and al dente penne.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Italian",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 20,
+    "totalTime": 35,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "penne pasta",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "basil pesto",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "zucchini",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "name": "red bell pepper",
+        "amount": 1,
+        "unit": "piece"
+      }
+    ],
+    "instructions": [
+      "Roast vegetables, cook pasta, and toss everything with pesto."
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 15,
+      "carbs": 58,
+      "fat": 16,
+      "fiber": 5,
+      "sodium": 480
+    },
+    "dietary": [
+      "vegetarian"
+    ],
+    "tags": [
+      "weeknight"
+    ],
+    "coreIngredients": [
+      "penne",
+      "pesto",
+      "zucchini"
+    ],
+    "createdAt": "2024-02-20"
+  },
+  {
+    "id": "tofu-peanut-lettuce-wraps",
+    "title": "Tofu Peanut Lettuce Wraps",
+    "description": "Crispy tofu crumbles tossed in peanut sauce, served in lettuce cups.",
+    "image": "https://images.unsplash.com/photo-1478749485505-2a903a729c63?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Asian",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "extra-firm tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "hoisin sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "peanut butter",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "butter lettuce",
+        "amount": 12,
+        "unit": "leaf"
+      }
+    ],
+    "instructions": [
+      "Crisp tofu, stir in sauces, and spoon into lettuce leaves with veggies."
+    ],
+    "nutrition": {
+      "calories": 290,
+      "protein": 16,
+      "carbs": 18,
+      "fat": 18,
+      "fiber": 4,
+      "sodium": 620
+    },
+    "dietary": [
+      "vegan"
+    ],
+    "tags": [
+      "light"
+    ],
+    "coreIngredients": [
+      "tofu",
+      "peanut butter",
+      "lettuce"
+    ],
+    "createdAt": "2024-02-21"
+  },
+  {
+    "id": "thai-green-curry",
+    "title": "Thai Green Curry",
+    "description": "Fragrant coconut curry simmered with eggplant, bamboo shoots, and basil.",
+    "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Thai",
+    "difficulty": "medium",
+    "prepTime": 15,
+    "cookTime": 25,
+    "totalTime": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "green curry paste",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "coconut milk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "name": "Thai eggplant",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "name": "bamboo shoots",
+        "amount": 1,
+        "unit": "cup"
+      }
+    ],
+    "instructions": [
+      "Simmer curry paste with coconut milk, add vegetables, cook until tender."
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 32,
+      "fiber": 4,
+      "sodium": 780
+    },
+    "dietary": [
+      "gluten-free"
+    ],
+    "tags": [
+      "curry"
+    ],
+    "coreIngredients": [
+      "coconut milk",
+      "green curry paste"
+    ],
+    "createdAt": "2024-02-22"
+  },
+  {
+    "id": "butternut-squash-soup",
+    "title": "Roasted Butternut Squash Soup",
+    "description": "Velvety roasted squash blended with sage brown butter and a touch of cream.",
+    "image": "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "American",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 35,
+    "totalTime": 50,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "butternut squash",
+        "amount": 1.2,
+        "unit": "kg"
+      },
+      {
+        "name": "carrot",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "name": "vegetable broth",
+        "amount": 1,
+        "unit": "liter"
+      },
+      {
+        "name": "sage",
+        "amount": 6,
+        "unit": "leaf"
+      }
+    ],
+    "instructions": [
+      "Roast vegetables, blend with broth, finish with sage butter and cream."
+    ],
+    "nutrition": {
+      "calories": 310,
+      "protein": 6,
+      "carbs": 42,
+      "fat": 14,
+      "fiber": 7,
+      "sodium": 540
+    },
+    "dietary": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "tags": [
+      "soup",
+      "fall"
+    ],
+    "coreIngredients": [
+      "butternut squash",
+      "sage",
+      "broth"
+    ],
+    "createdAt": "2024-02-24"
+  },
+  {
+    "id": "falafel-pita-wraps",
+    "title": "Crispy Falafel Pita Wraps",
+    "description": "Oven-baked falafel tucked into warm pita with tahini sauce and crunchy veggies.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Middle Eastern",
+    "difficulty": "medium",
+    "prepTime": 20,
+    "cookTime": 25,
+    "totalTime": 45,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "fresh parsley",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "clove"
+      },
+      {
+        "name": "pita",
+        "amount": 4,
+        "unit": "piece"
+      }
+    ],
+    "instructions": [
+      "Blend falafel mixture, form patties, bake until crisp, stuff into pita with tahini."
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 17,
+      "carbs": 56,
+      "fat": 14,
+      "fiber": 11,
+      "sodium": 620
+    },
+    "dietary": [
+      "vegan"
+    ],
+    "tags": [
+      "street-food"
+    ],
+    "coreIngredients": [
+      "chickpeas",
+      "pita",
+      "tahini"
+    ],
+    "createdAt": "2024-02-26"
+  },
+  {
+    "id": "kimchi-fried-rice",
+    "title": "Kimchi Fried Rice",
+    "description": "Spicy kimchi fried rice topped with crispy spam cubes and a fried egg.",
+    "image": "https://images.unsplash.com/photo-1608039829574-2c5141a32da0?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Korean",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "cookTime": 15,
+    "totalTime": 25,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "day-old rice",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "kimchi",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "spam",
+        "amount": 1,
+        "unit": "can"
+      },
+      {
+        "name": "gochujang",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      "Crisp spam, stir-fry with kimchi and rice, finish with gochujang and fried egg."
+    ],
+    "nutrition": {
+      "calories": 520,
+      "protein": 19,
+      "carbs": 64,
+      "fat": 20,
+      "fiber": 4,
+      "sodium": 980
+    },
+    "dietary": [],
+    "tags": [
+      "fried-rice"
+    ],
+    "coreIngredients": [
+      "rice",
+      "kimchi",
+      "spam"
+    ],
+    "createdAt": "2024-02-27"
+  },
+  {
+    "id": "chickpea-tikka-masala",
+    "title": "Chickpea Tikka Masala",
+    "description": "Creamy tomato-onion sauce simmered with spiced chickpeas and cashew cream.",
+    "image": "https://images.unsplash.com/photo-1608039829574-2c5141a32da0?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Indian",
+    "difficulty": "medium",
+    "prepTime": 20,
+    "cookTime": 25,
+    "totalTime": 45,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "amount": 2,
+        "unit": "can"
+      },
+      {
+        "name": "tomato puree",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "cashews",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "garam masala",
+        "amount": 2,
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "Blend cashew cream, simmer tomato sauce with spices, stir in chickpeas and cream."
+    ],
+    "nutrition": {
+      "calories": 410,
+      "protein": 16,
+      "carbs": 48,
+      "fat": 16,
+      "fiber": 10,
+      "sodium": 620
+    },
+    "dietary": [
+      "vegan",
+      "gluten-free"
+    ],
+    "tags": [
+      "curry"
+    ],
+    "coreIngredients": [
+      "chickpeas",
+      "tomato",
+      "cashew"
+    ],
+    "createdAt": "2024-02-28"
+  },
+  {
+    "id": "herb-roasted-chicken-and-potatoes",
+    "title": "Herb Roasted Chicken & Potatoes",
+    "description": "One-pan roasted chicken thighs with lemony potatoes and green beans.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Mediterranean",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 40,
+    "totalTime": 55,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "chicken thighs",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "name": "baby potatoes",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "name": "green beans",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "lemon",
+        "amount": 1,
+        "unit": "piece"
+      }
+    ],
+    "instructions": [
+      "Toss everything with oil and herbs, roast until chicken is crisp and potatoes tender."
+    ],
+    "nutrition": {
+      "calories": 510,
+      "protein": 32,
+      "carbs": 34,
+      "fat": 26,
+      "fiber": 5,
+      "sodium": 540
+    },
+    "dietary": [
+      "gluten-free"
+    ],
+    "tags": [
+      "sheet-pan",
+      "family"
+    ],
+    "coreIngredients": [
+      "chicken",
+      "potatoes",
+      "beans"
+    ],
+    "createdAt": "2024-03-01"
+  },
+  {
+    "id": "berry-almond-baked-oatmeal",
+    "title": "Berry Almond Baked Oatmeal",
+    "description": "Meal-prep friendly baked oats with mixed berries, almonds, and maple syrup.",
+    "image": "https://images.unsplash.com/photo-1506086679524-493c64fdfaa6?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "American",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "cookTime": 35,
+    "totalTime": 45,
+    "servings": 6,
+    "ingredients": [
+      {
+        "name": "rolled oats",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "almond milk",
+        "amount": 2.5,
+        "unit": "cup"
+      },
+      {
+        "name": "maple syrup",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "frozen berries",
+        "amount": 2,
+        "unit": "cup"
+      }
+    ],
+    "instructions": [
+      "Mix oats with wet ingredients and berries, bake until set and golden."
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 10,
+      "carbs": 45,
+      "fat": 11,
+      "fiber": 7,
+      "sodium": 180
+    },
+    "dietary": [
+      "vegetarian"
+    ],
+    "tags": [
+      "breakfast",
+      "meal-prep"
+    ],
+    "coreIngredients": [
+      "oats",
+      "berries",
+      "almond milk"
+    ],
+    "createdAt": "2024-03-02"
+  },
+  {
+    "id": "chipotle-fish-tacos",
+    "title": "Chipotle Fish Tacos",
+    "description": "Spiced white fish tucked into tortillas with cabbage slaw and lime crema.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Mexican",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 10,
+    "totalTime": 25,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "white fish fillets",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "name": "chipotle powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "corn tortillas",
+        "amount": 8,
+        "unit": "piece"
+      },
+      {
+        "name": "cabbage",
+        "amount": 2,
+        "unit": "cup"
+      }
+    ],
+    "instructions": [
+      "Season fish, sear until flaky, assemble tacos with slaw and crema."
+    ],
+    "nutrition": {
+      "calories": 390,
+      "protein": 28,
+      "carbs": 32,
+      "fat": 15,
+      "fiber": 5,
+      "sodium": 520
+    },
+    "dietary": [],
+    "tags": [
+      "tacos",
+      "weeknight"
+    ],
+    "coreIngredients": [
+      "fish",
+      "tortillas",
+      "cabbage"
+    ],
+    "createdAt": "2024-03-03"
+  },
+  {
+    "id": "caprese-portobello-stacks",
+    "title": "Caprese Stuffed Portobellos",
+    "description": "Broiled portobello caps topped with mozzarella, tomatoes, and balsamic glaze.",
+    "image": "https://images.unsplash.com/photo-1481931098730-318b6bb76272?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Italian",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "cookTime": 15,
+    "totalTime": 25,
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "portobello mushrooms",
+        "amount": 4,
+        "unit": "cap"
+      },
+      {
+        "name": "fresh mozzarella",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "name": "balsamic glaze",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      "Broil mushrooms, top with mozzarella and tomato, broil again and drizzle glaze."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein": 15,
+      "carbs": 10,
+      "fat": 18,
+      "fiber": 2,
+      "sodium": 360
+    },
+    "dietary": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "tags": [
+      "appetizer",
+      "low-carb"
+    ],
+    "coreIngredients": [
+      "portobello",
+      "mozzarella",
+      "tomato"
+    ],
+    "createdAt": "2024-03-04"
+  },
+  {
+    "id": "harissa-roasted-cauliflower",
+    "title": "Harissa Roasted Cauliflower Bowls",
+    "description": "Roasted cauliflower tossed with harissa and served with herbed yogurt and farro.",
+    "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Moroccan",
+    "difficulty": "medium",
+    "prepTime": 15,
+    "cookTime": 30,
+    "totalTime": 45,
+    "servings": 4,
+    "ingredients": [
+      { "name": "cauliflower", "amount": 1, "unit": "head", "notes": "broken into florets" },
+      { "name": "harissa paste", "amount": 2, "unit": "tbsp" },
+      { "name": "olive oil", "amount": 3, "unit": "tbsp" },
+      { "name": "farro", "amount": 1, "unit": "cup" },
+      { "name": "plain yogurt", "amount": 0.5, "unit": "cup" },
+      { "name": "mint", "amount": 0.25, "unit": "cup", "notes": "chopped" }
+    ],
+    "instructions": [
+      "Toss cauliflower with harissa and oil, roast at 220°C for 25 minutes.",
+      "Cook farro until tender.",
+      "Serve bowls with farro, roasted cauliflower, and mint yogurt."
+    ],
+    "nutrition": { "calories": 390, "protein": 14, "carbs": 52, "fat": 15, "fiber": 9, "sodium": 520 },
+    "dietary": ["vegetarian"],
+    "tags": ["bowls", "spicy"],
+    "coreIngredients": ["cauliflower", "harissa", "farro"],
+    "createdAt": "2024-03-06"
+  },
+  {
+    "id": "banh-mi-rice-bowl",
+    "title": "Banh Mi Rice Bowls",
+    "description": "All the flavors of a banh mi sandwich layered over fragrant rice with pickled veggies.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Vietnamese",
+    "difficulty": "easy",
+    "prepTime": 20,
+    "cookTime": 20,
+    "totalTime": 40,
+    "servings": 4,
+    "ingredients": [
+      { "name": "jasmine rice", "amount": 2, "unit": "cup", "notes": "cooked" },
+      { "name": "pork tenderloin", "amount": 500, "unit": "g", "notes": "thinly sliced" },
+      { "name": "soy sauce", "amount": 3, "unit": "tbsp" },
+      { "name": "fish sauce", "amount": 1, "unit": "tbsp" },
+      { "name": "carrot", "amount": 2, "unit": "piece", "notes": "julienned" },
+      { "name": "daikon", "amount": 1, "unit": "cup", "notes": "julienned" },
+      { "name": "rice vinegar", "amount": 0.25, "unit": "cup" },
+      { "name": "cucumber", "amount": 1, "unit": "piece", "notes": "sliced" },
+      { "name": "cilantro", "amount": 0.25, "unit": "cup" }
+    ],
+    "instructions": [
+      "Quick-pickle carrot and daikon in rice vinegar, sugar, and salt.",
+      "Marinate pork with soy, fish sauce, garlic, and sauté until caramelized.",
+      "Assemble bowls with rice, pork, pickles, cucumber, cilantro, and chili mayo."
+    ],
+    "nutrition": { "calories": 520, "protein": 32, "carbs": 60, "fat": 18, "fiber": 4, "sodium": 900 },
+    "dietary": [],
+    "tags": ["bowls", "street-food"],
+    "coreIngredients": ["pork", "rice", "pickled vegetables"],
+    "createdAt": "2024-03-07"
+  },
+  {
+    "id": "chocolate-avocado-mousse",
+    "title": "Chocolate Avocado Mousse",
+    "description": "Silky dairy-free chocolate mousse whipped with ripe avocados and espresso.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Global",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "cookTime": 0,
+    "totalTime": 10,
+    "servings": 4,
+    "ingredients": [
+      { "name": "ripe avocado", "amount": 2, "unit": "piece" },
+      { "name": "cocoa powder", "amount": 0.25, "unit": "cup" },
+      { "name": "maple syrup", "amount": 0.25, "unit": "cup" },
+      { "name": "espresso", "amount": 2, "unit": "tbsp" },
+      { "name": "vanilla extract", "amount": 1, "unit": "tsp" },
+      { "name": "sea salt", "amount": 0.25, "unit": "tsp" }
+    ],
+    "instructions": [
+      "Blend avocado, cocoa, maple syrup, espresso, vanilla, and salt until smooth.",
+      "Chill for 20 minutes and serve with berries."
+    ],
+    "nutrition": { "calories": 280, "protein": 4, "carbs": 32, "fat": 18, "fiber": 7, "sodium": 120 },
+    "dietary": ["vegan", "gluten-free"],
+    "tags": ["dessert", "no-bake"],
+    "coreIngredients": ["avocado", "cocoa", "maple syrup"],
+    "createdAt": "2024-03-08"
+  },
+  {
+    "id": "mango-coconut-smoothie-bowl",
+    "title": "Mango Coconut Smoothie Bowl",
+    "description": "Tropical smoothie bowl topped with toasted coconut, chia seeds, and granola.",
+    "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Tropical",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "cookTime": 0,
+    "totalTime": 10,
+    "servings": 2,
+    "ingredients": [
+      { "name": "frozen mango", "amount": 2, "unit": "cup" },
+      { "name": "coconut milk", "amount": 1, "unit": "cup" },
+      { "name": "banana", "amount": 1, "unit": "piece" },
+      { "name": "chia seeds", "amount": 2, "unit": "tbsp" },
+      { "name": "granola", "amount": 0.5, "unit": "cup" },
+      { "name": "toasted coconut", "amount": 0.25, "unit": "cup" }
+    ],
+    "instructions": [
+      "Blend mango, coconut milk, and banana until thick.",
+      "Pour into bowls and top with chia seeds, granola, and coconut."
+    ],
+    "nutrition": { "calories": 360, "protein": 6, "carbs": 54, "fat": 14, "fiber": 8, "sodium": 90 },
+    "dietary": ["vegan", "gluten-free"],
+    "tags": ["breakfast", "smoothie"],
+    "coreIngredients": ["mango", "coconut milk", "banana"],
+    "createdAt": "2024-03-09"
+  },
+  {
+    "id": "saffron-kheer",
+    "title": "Saffron Pistachio Kheer",
+    "description": "Creamy Indian rice pudding infused with saffron, cardamom, and pistachios.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Indian",
+    "difficulty": "medium",
+    "prepTime": 10,
+    "cookTime": 35,
+    "totalTime": 45,
+    "servings": 6,
+    "ingredients": [
+      { "name": "basmati rice", "amount": 0.5, "unit": "cup", "notes": "rinsed" },
+      { "name": "whole milk", "amount": 4, "unit": "cup" },
+      { "name": "condensed milk", "amount": 0.5, "unit": "cup" },
+      { "name": "saffron", "amount": 0.25, "unit": "tsp" },
+      { "name": "cardamom powder", "amount": 0.5, "unit": "tsp" },
+      { "name": "pistachios", "amount": 0.25, "unit": "cup", "notes": "chopped" }
+    ],
+    "instructions": [
+      "Simmer rice in milk until tender.",
+      "Stir in condensed milk, saffron, and cardamom. Cook until thickened.",
+      "Chill slightly and garnish with pistachios."
+    ],
+    "nutrition": { "calories": 310, "protein": 9, "carbs": 42, "fat": 12, "fiber": 1, "sodium": 160 },
+    "dietary": ["vegetarian", "gluten-free"],
+    "tags": ["dessert", "festival"],
+    "coreIngredients": ["basmati rice", "saffron", "milk"],
+    "createdAt": "2024-03-10"
+  }
+]
