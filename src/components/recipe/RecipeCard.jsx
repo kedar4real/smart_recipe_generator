@@ -23,10 +23,10 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
   }
 
   return (
-    <article className="group overflow-hidden rounded-[28px] border border-white/50 bg-white/95 p-4 shadow-card backdrop-blur transition duration-300 hover:-translate-y-1.5 hover:shadow-retro">
+    <article className="group overflow-hidden rounded-[28px] border border-[#f4e6d4] bg-[#fffaf3] p-5 shadow-[0_25px_55px_rgba(32,15,4,0.12)] transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.01] hover:shadow-[0_35px_70px_rgba(26,12,2,0.18)]">
       <Link
         to={`/recipes/${recipe.id}`}
-        className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2"
+        className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-200 focus-visible:ring-offset-2 focus-visible:ring-offset-[#fffaf3]"
       >
         <div className="relative overflow-hidden rounded-3xl">
           <img
@@ -67,7 +67,7 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
               </p>
               <h3 className="mt-1 text-xl font-semibold text-secondary-900">{recipe.title}</h3>
             </div>
-            <span className="rounded-full bg-secondary-50 px-3 py-1 text-xs font-semibold text-secondary-700">
+            <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-secondary-800">
               {recipe.difficulty}
             </span>
           </div>
@@ -86,7 +86,7 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
         </div>
       </Link>
 
-      <div className="border-t border-secondary-100 px-1 pt-4">
+      <div className="border-t border-stone-200 px-1 pt-4">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary-500">
           Rate this dish
         </p>
@@ -115,7 +115,7 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
 
 function InfoChip({ iconSrc, label }) {
   return (
-    <div className="flex items-center gap-1 rounded-full bg-secondary-50 px-3 py-1 capitalize">
+    <div className="flex items-center gap-2 rounded-full bg-stone-100/80 px-3 py-1 text-secondary-700 capitalize">
       <img src={iconSrc} alt="" className="h-4 w-4" />
       {label}
     </div>

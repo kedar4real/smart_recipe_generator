@@ -5,12 +5,12 @@ const testimonials = [
       'I wanted a playful kitchen companion that respected my pantry and my heritage. This is the sous-chef I never knew I needed.',
   },
   {
-    name: 'Priya Rao',
+    name: 'Eleanor Hart',
     quote:
       'The retro look brings nostalgia, but the ingredient intelligence is seriously futuristic.',
   },
   {
-    name: 'Aarav Patel',
+    name: 'Julien Moreau',
     quote:
       'Smart Gourmet Kitchen rescued my weeknight dinners with clever swaps and instant photo recognition.',
   },
@@ -18,7 +18,7 @@ const testimonials = [
 
 export function AboutSection() {
   return (
-    <section className="mx-auto mt-12 max-w-6xl rounded-[32px] border border-white/60 bg-white/90 px-6 py-10 text-center shadow-card">
+    <section className="mx-auto mt-12 max-w-6xl rounded-[32px] border border-stone-200 bg-[#fff8ef] px-6 py-10 text-center shadow-[0_25px_60px_rgba(21,11,5,0.16)]">
       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary-400">
         About Kedar Mashalkar&apos;s Smart Gourmet Kitchen
       </p>
@@ -31,7 +31,7 @@ export function AboutSection() {
         {testimonials.map((item) => (
           <figure
             key={item.name}
-            className="rounded-2xl border border-secondary-100 bg-secondary-50/60 p-4 text-left shadow-inner"
+            className="rounded-2xl border border-stone-200 bg-white p-4 text-left shadow-sm"
           >
             <blockquote className="text-secondary-700">&ldquo;{item.quote}&rdquo;</blockquote>
             <figcaption className="mt-3 text-sm font-semibold text-secondary-900">— {item.name}</figcaption>

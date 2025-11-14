@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 :root {
-  font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    sans-serif;
-  color: #2d1a0b;
-  --surface-light: rgba(255, 255, 255, 0.92);
-  --surface-tint: rgba(248, 239, 228, 0.85);
+  font-family: 'Inter', 'Poppins', 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  color: #1f130d;
+  --surface-base: #fffdf7;
+  --surface-strong: #f8f1e9;
+  --surface-contrast: #f1e5d7;
+  --shadow-soft: 0 20px 40px rgba(21, 11, 3, 0.15);
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #f7efe1;
-  background-image:
-    radial-gradient(circle at 15% 20%, rgba(249, 213, 177, 0.35), transparent 55%),
-    radial-gradient(circle at 80% 10%, rgba(198, 226, 213, 0.25), transparent 60%),
-    linear-gradient(145deg, #fff6ec 0%, #fbeeda 55%, #f6e5d3 100%);
-  background-size: auto, auto, cover;
-  background-attachment: fixed;
+  position: relative;
+  background-image: url('/images/hero/salad-bowl.jpg');
+  background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  color: #1f130d;
 }
 
 body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255, 244, 236, 0.85), rgba(235, 224, 210, 0.78));
+  background: linear-gradient(180deg, rgba(12, 6, 4, 0.78) 0%, rgba(24, 14, 8, 0.65) 45%, rgba(32, 19, 9, 0.4) 100%);
   pointer-events: none;
   z-index: -1;
 }
@@ -36,39 +36,35 @@ body::after {
   min-height: 100vh;
 }
 
-.retro-card {
-  background: linear-gradient(135deg, var(--surface-light), var(--surface-tint));
-  border-radius: 32px;
-  box-shadow: 0 30px 80px rgba(70, 52, 36, 0.2);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+.retro-card,
+.surface-panel {
+  background-color: var(--surface-base);
+  border-radius: 28px;
+  border: 1px solid rgba(36, 21, 10, 0.08);
+  box-shadow: 0 18px 45px rgba(20, 12, 6, 0.12);
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+
+.retro-card:hover,
+.surface-panel:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 24px 55px rgba(17, 9, 3, 0.18);
 }
 
 .retro-pill {
   border-radius: 999px;
-  background: linear-gradient(135deg, #ffe3ca, #ffd3b0);
-  color: #69330d;
+  background: #f5e7d3;
+  color: #5a3315;
   font-weight: 600;
-  box-shadow:
-    0 6px 15px rgba(181, 107, 26, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 8px 20px rgba(91, 52, 25, 0.2);
 }
 
 .retro-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .retro-glow {
-  box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.45) inset,
-    0 18px 35px rgba(37, 21, 10, 0.25);
-}
-
-.surface-panel {
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.95), rgba(247, 239, 231, 0.85));
-  border: 1px solid rgba(227, 214, 200, 0.8);
-  border-radius: 24px;
-  box-shadow: 0 15px 45px rgba(78, 55, 34, 0.12);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35) inset, 0 20px 40px rgba(21, 13, 5, 0.25);
 }

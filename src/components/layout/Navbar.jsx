@@ -29,7 +29,7 @@ export function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-[#3d2519] bg-[#1b120c]/95 text-amber-50 shadow-[0_10px_30px_rgba(17,10,6,0.45)] backdrop-blur">
+    <header className="sticky top-0 z-40 w-full border-b border-purple-900/40 bg-gradient-to-r from-purple-600/90 via-purple-700/95 to-purple-900/95 text-white shadow-[0_18px_45px_rgba(35,0,70,0.35)] backdrop-blur-sm">
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-4 px-4 py-3 sm:px-8">
         <div className="flex min-w-[220px] items-center gap-3">
           <img
@@ -38,16 +38,16 @@ export function Navbar() {
             className="h-10 w-10 rounded-2xl border border-white/30 bg-white/10 p-1 shadow-lg"
           />
           <div>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.5em] text-amber-200/80">
-              Retro flair · Smart pantry magic
+            <p className="text-[10px] font-semibold uppercase tracking-[0.5em] text-amber-100/80">
+              Recommended by the best chefs.
             </p>
-            <p className="text-lg font-semibold leading-tight text-white">
+            <p className="text-lg font-semibold leading-tight">
               Kedar Mashalkar&apos;s Smart Gourmet Kitchen
             </p>
           </div>
         </div>
 
-        <nav className="flex flex-wrap items-center gap-2 text-sm font-semibold text-amber-100">
+        <nav className="flex flex-wrap items-center gap-2 text-sm font-semibold text-white/80">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -55,8 +55,8 @@ export function Navbar() {
               className={({ isActive }) =>
                 `rounded-full px-4 py-2 transition ${
                   isActive
-                    ? 'bg-[#f7a654] text-[#1d120a] shadow-lg'
-                    : 'text-amber-50/70 hover:bg-white/10 hover:text-white'
+                    ? 'bg-white text-purple-800 shadow-lg'
+                    : 'hover:bg-white/10 hover:text-white'
                 }`
               }
             >
@@ -67,19 +67,19 @@ export function Navbar() {
 
         <form
           onSubmit={handleSearchSubmit}
-          className="flex min-w-[220px] flex-1 items-center gap-3 rounded-full border border-white/15 bg-[#2b1a13]/90 px-4 py-2 text-sm shadow-inner focus-within:border-amber-200"
+          className="flex min-w-[220px] flex-1 items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm shadow-inner transition focus-within:border-white/60"
         >
           <img src="/images/icons/sparkle.svg" alt="" className="h-5 w-5 opacity-80" />
           <input
             type="text"
             value={searchValue}
             onChange={(event) => setSearchValue(event.target.value)}
-            className="flex-1 border-none bg-transparent text-amber-50 placeholder:text-amber-100/50 focus:outline-none"
+            className="flex-1 border-none bg-transparent text-white placeholder:text-white/70 focus:outline-none"
             placeholder="Drop pantry items, press Enter..."
           />
           <button
             type="submit"
-            className="rounded-full bg-[#f7a654] px-4 py-1 text-xs font-semibold uppercase tracking-wide text-[#2d1405] transition hover:bg-[#ffb46c]"
+            className="rounded-full bg-white/90 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-purple-800 transition hover:bg-white"
           >
             Search
           </button>
@@ -93,10 +93,10 @@ export function Navbar() {
                 key={toggle.id}
                 type="button"
                 onClick={() => toggleDietary(toggle.id)}
-                className={`flex items-center gap-2 rounded-full border px-3 py-1 transition ${
+                className={`flex items-center gap-2 rounded-full border px-3 py-1 transition-all duration-200 ${
                   isActive
-                    ? 'border-white/50 bg-white/90 text-[#1f1209]'
-                    : 'border-white/10 text-amber-50/80 hover:border-white/40 hover:bg-white/10'
+                    ? 'border-white/60 bg-white/90 text-purple-900'
+                    : 'border-white/20 text-white/80 hover:border-white/50 hover:bg-white/10'
                 }`}
               >
                 <span

@@ -40,8 +40,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
-        display: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'Poppins', 'Space Grotesk', 'system-ui', 'sans-serif'],
+        display: ['Inter', 'Poppins', 'Space Grotesk', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         retro: '0 25px 50px -12px rgba(36, 22, 22, 0.4)',
