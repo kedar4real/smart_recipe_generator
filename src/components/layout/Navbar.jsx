@@ -29,59 +29,63 @@ export function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-xl border-b border-primary-100">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-        <div className="flex items-center gap-3">
-          <img src="/images/logo.svg" alt="Kedar Mashalkar logo" className="h-12 w-12 rounded-2xl shadow-lg" />
+    <header className="sticky top-0 z-40 w-full border-b border-[#3d2519] bg-[#1b120c]/95 text-amber-50 shadow-[0_10px_30px_rgba(17,10,6,0.45)] backdrop-blur">
+      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-4 px-4 py-3 sm:px-8">
+        <div className="flex min-w-[220px] items-center gap-3">
+          <img
+            src="/images/logo.svg"
+            alt="Kedar Mashalkar logo"
+            className="h-10 w-10 rounded-2xl border border-white/30 bg-white/10 p-1 shadow-lg"
+          />
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-secondary-400">
-              Curated pantry studio
+            <p className="text-[10px] font-semibold uppercase tracking-[0.5em] text-amber-200/80">
+              Retro flair · Smart pantry magic
             </p>
-            <p className="text-xl font-bold text-secondary-900">Kedar Mashalkar&apos;s Smart Gourmet Kitchen</p>
+            <p className="text-lg font-semibold leading-tight text-white">
+              Kedar Mashalkar&apos;s Smart Gourmet Kitchen
+            </p>
           </div>
         </div>
 
-        <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
-          <nav className="flex flex-wrap items-center gap-2 text-sm font-semibold text-secondary-600">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.to}
-                to={link.to}
-                className={({ isActive }) =>
-                  `rounded-full px-4 py-2 transition ${
-                    isActive
-                      ? 'bg-primary-500 text-white shadow-md shadow-primary-200'
-                      : 'hover:bg-primary-50 hover:text-primary-700'
-                  }`
-                }
-              >
-                {link.label}
-              </NavLink>
-            ))}
-          </nav>
-
-          <form
-            onSubmit={handleSearchSubmit}
-            className="hidden flex-1 items-center gap-3 rounded-full border border-secondary-100 bg-white/95 px-4 py-2 text-sm shadow-inner sm:flex"
-          >
-            <img src="/images/icons/sparkle.svg" alt="" className="h-6 w-6" />
-            <input
-              type="text"
-              value={searchValue}
-              onChange={(event) => setSearchValue(event.target.value)}
-              className="flex-1 border-none bg-transparent text-secondary-900 placeholder:text-secondary-400 focus:outline-none"
-              placeholder="Quick add ingredients (comma separated)..."
-            />
-            <button
-              type="submit"
-              className="rounded-full bg-secondary-900 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-white"
+        <nav className="flex flex-wrap items-center gap-2 text-sm font-semibold text-amber-100">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) =>
+                `rounded-full px-4 py-2 transition ${
+                  isActive
+                    ? 'bg-[#f7a654] text-[#1d120a] shadow-lg'
+                    : 'text-amber-50/70 hover:bg-white/10 hover:text-white'
+                }`
+              }
             >
-              Go
-            </button>
-          </form>
-        </div>
+              {link.label}
+            </NavLink>
+          ))}
+        </nav>
 
-        <div className="flex flex-wrap items-center justify-end gap-2">
+        <form
+          onSubmit={handleSearchSubmit}
+          className="flex min-w-[220px] flex-1 items-center gap-3 rounded-full border border-white/15 bg-[#2b1a13]/90 px-4 py-2 text-sm shadow-inner focus-within:border-amber-200"
+        >
+          <img src="/images/icons/sparkle.svg" alt="" className="h-5 w-5 opacity-80" />
+          <input
+            type="text"
+            value={searchValue}
+            onChange={(event) => setSearchValue(event.target.value)}
+            className="flex-1 border-none bg-transparent text-amber-50 placeholder:text-amber-100/50 focus:outline-none"
+            placeholder="Drop pantry items, press Enter..."
+          />
+          <button
+            type="submit"
+            className="rounded-full bg-[#f7a654] px-4 py-1 text-xs font-semibold uppercase tracking-wide text-[#2d1405] transition hover:bg-[#ffb46c]"
+          >
+            Search
+          </button>
+        </form>
+
+        <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-white">
           {dietaryQuickToggles.map((toggle) => {
             const isActive = filters.dietaryTags.includes(toggle.id)
             return (
@@ -89,10 +93,10 @@ export function Navbar() {
                 key={toggle.id}
                 type="button"
                 onClick={() => toggleDietary(toggle.id)}
-                className={`group flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold transition ${
+                className={`flex items-center gap-2 rounded-full border px-3 py-1 transition ${
                   isActive
-                    ? 'border-primary-500 bg-primary-500 text-white shadow'
-                    : 'border-secondary-200 text-secondary-600 hover:border-primary-400 hover:bg-primary-50 hover:text-primary-700'
+                    ? 'border-white/50 bg-white/90 text-[#1f1209]'
+                    : 'border-white/10 text-amber-50/80 hover:border-white/40 hover:bg-white/10'
                 }`}
               >
                 <span

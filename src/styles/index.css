@@ -17,10 +17,9 @@ body {
   background-image:
     radial-gradient(circle at 15% 20%, rgba(249, 213, 177, 0.35), transparent 55%),
     radial-gradient(circle at 80% 10%, rgba(198, 226, 213, 0.25), transparent 60%),
-    linear-gradient(145deg, #fff6ec 0%, #fbeeda 55%, #f6e5d3 100%),
-    url('/images/hero/salad-bowl.jpg');
-  background-size: auto, auto, cover, cover;
-  background-attachment: fixed, fixed, fixed, fixed;
+    linear-gradient(145deg, #fff6ec 0%, #fbeeda 55%, #f6e5d3 100%);
+  background-size: auto, auto, cover;
+  background-attachment: fixed;
   background-position: center;
 }
 

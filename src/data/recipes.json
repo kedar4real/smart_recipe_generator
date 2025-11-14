@@ -1373,5 +1373,168 @@
     "tags": ["dessert", "festival"],
     "coreIngredients": ["basmati rice", "saffron", "milk"],
     "createdAt": "2024-03-10"
+  },
+  {
+    "id": "citrus-farro-harvest-salad",
+    "title": "Citrus & Farro Harvest Salad",
+    "description": "Ruby grapefruit, shaved fennel, and chewy farro tossed in a honey-citrus vinaigrette.",
+    "image": "/images/recipes/citrus-farro-salad.jpg",
+    "cuisine": "Californian",
+    "difficulty": "easy",
+    "prepTime": 20,
+    "cookTime": 25,
+    "totalTime": 45,
+    "servings": 4,
+    "ingredients": [
+      { "name": "farro", "amount": 1, "unit": "cup", "notes": "uncooked" },
+      { "name": "grapefruit", "amount": 1, "unit": "piece", "notes": "segmented" },
+      { "name": "orange", "amount": 1, "unit": "piece", "notes": "segmented" },
+      { "name": "fennel bulb", "amount": 1, "unit": "piece", "notes": "thinly sliced" },
+      { "name": "arugula", "amount": 2, "unit": "cup" },
+      { "name": "pistachios", "amount": 0.25, "unit": "cup", "notes": "toasted" },
+      { "name": "goat cheese", "amount": 0.5, "unit": "cup", "notes": "crumbled" },
+      { "name": "olive oil", "amount": 3, "unit": "tbsp" },
+      { "name": "honey", "amount": 1, "unit": "tbsp" },
+      { "name": "white wine vinegar", "amount": 1, "unit": "tbsp" }
+    ],
+    "instructions": [
+      "Cook farro until tender, drain, and cool.",
+      "Whisk olive oil, honey, citrus juices, and vinegar with salt and pepper.",
+      "Toss farro with arugula, fennel, citrus, goat cheese, and pistachios; drizzle dressing."
+    ],
+    "nutrition": { "calories": 420, "protein": 12, "carbs": 55, "fat": 16, "fiber": 9, "sodium": 360 },
+    "dietary": ["vegetarian"],
+    "tags": ["salad", "meal-prep"],
+    "coreIngredients": ["farro", "citrus", "fennel"],
+    "createdAt": "2024-03-12"
+  },
+  {
+    "id": "charred-corn-fritters",
+    "title": "Charred Corn & Scallion Fritters",
+    "description": "Crispy sweet-corn fritters with smoked paprika aioli for dipping.",
+    "image": "/images/recipes/charred-corn-fritters.jpg",
+    "cuisine": "Southern",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "ingredients": [
+      { "name": "corn kernels", "amount": 3, "unit": "cup", "notes": "charred" },
+      { "name": "scallions", "amount": 4, "unit": "piece", "notes": "sliced" },
+      { "name": "chickpea flour", "amount": 0.75, "unit": "cup" },
+      { "name": "egg", "amount": 2, "unit": "piece" },
+      { "name": "baking powder", "amount": 1, "unit": "tsp" },
+      { "name": "smoked paprika", "amount": 1, "unit": "tsp" },
+      { "name": "avocado oil", "amount": 0.25, "unit": "cup", "notes": "for frying" },
+      { "name": "lime", "amount": 1, "unit": "piece" }
+    ],
+    "instructions": [
+      "Whisk flour, baking powder, paprika, eggs, and lime zest into a batter.",
+      "Fold in charred corn and scallions.",
+      "Pan-fry scoops of batter until golden and serve with aioli."
+    ],
+    "nutrition": { "calories": 390, "protein": 14, "carbs": 42, "fat": 18, "fiber": 7, "sodium": 420 },
+    "dietary": ["vegetarian", "gluten-free"],
+    "tags": ["snack", "starter"],
+    "coreIngredients": ["corn", "scallion", "chickpea flour"],
+    "createdAt": "2024-03-13"
+  },
+  {
+    "id": "miso-salmon-noodles",
+    "title": "Miso Glazed Salmon & Soba",
+    "description": "Broiled salmon lacquered with miso-maple glaze served over chilled soba noodles.",
+    "image": "/images/recipes/miso-salmon-noodles.jpg",
+    "cuisine": "Japanese",
+    "difficulty": "medium",
+    "prepTime": 15,
+    "cookTime": 12,
+    "totalTime": 27,
+    "servings": 4,
+    "ingredients": [
+      { "name": "salmon fillets", "amount": 4, "unit": "piece" },
+      { "name": "white miso", "amount": 3, "unit": "tbsp" },
+      { "name": "maple syrup", "amount": 2, "unit": "tbsp" },
+      { "name": "rice vinegar", "amount": 1, "unit": "tbsp" },
+      { "name": "soba noodles", "amount": 300, "unit": "g" },
+      { "name": "cucumber", "amount": 1, "unit": "piece", "notes": "julienned" },
+      { "name": "edamame", "amount": 1, "unit": "cup", "notes": "shelled" },
+      { "name": "sesame oil", "amount": 1, "unit": "tbsp" }
+    ],
+    "instructions": [
+      "Brush salmon with miso, maple, vinegar, and broil until caramelized.",
+      "Cook soba, rinse cold, and toss with sesame oil, edamame, and cucumber.",
+      "Serve salmon over noodles with extra glaze."
+    ],
+    "nutrition": { "calories": 520, "protein": 34, "carbs": 46, "fat": 22, "fiber": 5, "sodium": 780 },
+    "dietary": [],
+    "tags": ["seafood", "weeknight"],
+    "coreIngredients": ["salmon", "miso", "soba"],
+    "createdAt": "2024-03-14"
+  },
+  {
+    "id": "zaatar-lamb-meatballs",
+    "title": "Za&apos;atar Lamb Meatballs",
+    "description": "Oven-roasted lamb meatballs with sumac yogurt, charred tomatoes, and herbs.",
+    "image": "/images/recipes/zaatar-lamb-meatballs.jpg",
+    "cuisine": "Levantine",
+    "difficulty": "medium",
+    "prepTime": 20,
+    "cookTime": 18,
+    "totalTime": 38,
+    "servings": 4,
+    "ingredients": [
+      { "name": "ground lamb", "amount": 500, "unit": "g" },
+      { "name": "za'atar", "amount": 2, "unit": "tbsp" },
+      { "name": "breadcrumbs", "amount": 0.5, "unit": "cup" },
+      { "name": "egg", "amount": 1, "unit": "piece" },
+      { "name": "garlic", "amount": 3, "unit": "clove", "notes": "minced" },
+      { "name": "plain yogurt", "amount": 0.75, "unit": "cup" },
+      { "name": "sumac", "amount": 0.5, "unit": "tsp" },
+      { "name": "cherry tomatoes", "amount": 2, "unit": "cup" },
+      { "name": "mint", "amount": 0.25, "unit": "cup", "notes": "torn" }
+    ],
+    "instructions": [
+      "Combine lamb, breadcrumbs, egg, za'atar, garlic, and salt; roll into meatballs.",
+      "Bake with cherry tomatoes at 220°C for 15-18 minutes.",
+      "Blend yogurt with sumac and drizzle over meatballs with mint."
+    ],
+    "nutrition": { "calories": 480, "protein": 28, "carbs": 18, "fat": 32, "fiber": 3, "sodium": 540 },
+    "dietary": [],
+    "tags": ["dinner", "sharing"],
+    "coreIngredients": ["lamb", "za'atar", "yogurt"],
+    "createdAt": "2024-03-15"
+  },
+  {
+    "id": "herby-white-bean-toast",
+    "title": "Herby White Bean Toast",
+    "description": "Creamy cannellini beans with lemon, dill, and crispy shallots on toasted sourdough.",
+    "image": "/images/recipes/herby-white-bean-toast.jpg",
+    "cuisine": "Mediterranean",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "cookTime": 15,
+    "totalTime": 25,
+    "servings": 2,
+    "ingredients": [
+      { "name": "cannellini beans", "amount": 1, "unit": "can", "notes": "rinsed" },
+      { "name": "shallot", "amount": 1, "unit": "piece", "notes": "thinly sliced" },
+      { "name": "garlic", "amount": 2, "unit": "clove" },
+      { "name": "lemon", "amount": 1, "unit": "piece", "notes": "zest and juice" },
+      { "name": "fresh dill", "amount": 0.25, "unit": "cup", "notes": "chopped" },
+      { "name": "olive oil", "amount": 3, "unit": "tbsp" },
+      { "name": "sourdough bread", "amount": 4, "unit": "slice" },
+      { "name": "baby arugula", "amount": 1, "unit": "cup" }
+    ],
+    "instructions": [
+      "Sauté shallots in olive oil until crisp and set aside.",
+      "Warm beans with garlic, lemon zest, and juice; mash lightly.",
+      "Spoon beans onto toasted sourdough, top with dill, arugula, and crispy shallots."
+    ],
+    "nutrition": { "calories": 360, "protein": 15, "carbs": 48, "fat": 12, "fiber": 10, "sodium": 420 },
+    "dietary": ["vegetarian"],
+    "tags": ["brunch", "toast"],
+    "coreIngredients": ["white beans", "lemon", "bread"],
+    "createdAt": "2024-03-16"
   }
 ]
