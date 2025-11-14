@@ -70,30 +70,69 @@ export default function HomePage() {
 
   return (
     <div className="space-y-16">
-      <section className="retro-card relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50 px-6 py-16 text-center sm:px-12">
-        <p className="text-xs font-semibold uppercase tracking-[0.4em] text-secondary-400">
-          Kedar Mashalkar's Smart Gourmet Kitchen
-        </p>
-        <h1 className="mt-4 text-4xl font-bold leading-tight text-secondary-900 sm:text-5xl">
-          Pantry staples, chef-level ideas.
-        </h1>
-        <p className="mt-4 text-lg text-secondary-600">
-          Start with what you already own, add a quick photo if you like, and let the kitchen companion do the menu planning.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <button
-            type="button"
-            onClick={handleScrollToIngredients}
-            className="rounded-full bg-primary-500 px-8 py-3 text-base font-semibold text-white shadow-lg shadow-primary-200 transition hover:-translate-y-0.5 hover:bg-primary-600"
-          >
-            Start with your ingredients
-          </button>
-          <a
-            href="#recipe-feed"
-            className="rounded-full border border-secondary-200 px-8 py-3 text-base font-semibold text-secondary-700 transition hover:border-primary-200 hover:text-primary-600"
-          >
-            Browse inspirations
-          </a>
+      <section className="rounded-[40px] border border-stone-200 bg-[#fffdf8] px-6 py-16 shadow-[0_30px_60px_rgba(26,12,4,0.15)] sm:px-12">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="text-left">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-secondary-500">
+              Recommended by the best chefs.
+            </p>
+            <h1 className="mt-4 text-4xl font-semibold leading-tight text-secondary-900 sm:text-5xl">
+              Bring your pantry into focus, then plate like a pro.
+            </h1>
+            <p className="mt-4 text-lg text-secondary-600">
+              Scan your shelves, drop a photo, and Smart Gourmet Kitchen curates seasonal-ready menus,
+              clever swaps, and nutrition callouts in seconds.
+            </p>
+            <ul className="mt-6 space-y-2 text-secondary-700">
+              {[
+                'Ingredient-aware search with dietary context built in.',
+                'Photo-to-pantry detection for quick weeknight planning.',
+                'Chef-led smart suggestions when you are missing a staple.',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-base">
+                  <span className="mt-2 h-2 w-2 rounded-full bg-primary-500" aria-hidden="true" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <button
+                type="button"
+                onClick={handleScrollToIngredients}
+                className="rounded-full bg-primary-500 px-8 py-3 text-base font-semibold text-white shadow-lg transition-all duration-200 hover:-translate-y-1 hover:scale-[1.01] hover:bg-primary-600"
+              >
+                Start with your ingredients
+              </button>
+              <a
+                href="#recipe-feed"
+                className="rounded-full border border-stone-300 px-8 py-3 text-base font-semibold text-secondary-800 transition-all duration-200 hover:-translate-y-1 hover:border-primary-300 hover:text-primary-700"
+              >
+                Browse inspirations
+              </a>
+            </div>
+          </div>
+          <div className="rounded-[32px] border border-stone-200 bg-white/90 p-6 shadow-[0_25px_55px_rgba(18,10,4,0.15)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-secondary-500">
+              Live pantry snapshot
+            </p>
+            <div className="mt-4 space-y-4">
+              <div className="flex items-center justify-between rounded-2xl bg-stone-50 px-4 py-3">
+                <div>
+                  <p className="text-sm font-semibold text-secondary-900">Pantry confidence</p>
+                  <p className="text-xs text-secondary-500">Based on your latest photo upload</p>
+                </div>
+                <p className="text-3xl font-semibold text-primary-500">92%</p>
+              </div>
+              <div className="rounded-2xl border border-stone-100 px-4 py-3">
+                <p className="text-sm font-semibold text-secondary-800">Smart suggestions</p>
+                <ul className="mt-3 space-y-2 text-sm text-secondary-600">
+                  <li>• Swap cashews for pine nuts in pesto.</li>
+                  <li>• Roast grape tomatoes alongside halloumi.</li>
+                  <li>• Try herb oil drizzle on farro bowls.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -129,7 +168,7 @@ export default function HomePage() {
                   setIngredients(['tomato', 'basil', 'garlic'])
                   updateFilters({ dietaryTags: [] })
                 }}
-                className="rounded-full bg-primary-500 px-6 py-2 text-sm font-semibold text-white shadow hover:bg-primary-600"
+                className="rounded-full bg-primary-500 px-6 py-2 text-sm font-semibold text-white shadow transition-all duration-200 hover:-translate-y-1 hover:scale-[1.01] hover:bg-primary-600"
               >
                 Try a sample basket
               </button>

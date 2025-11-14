@@ -1536,5 +1536,136 @@
     "tags": ["brunch", "toast"],
     "coreIngredients": ["white beans", "lemon", "bread"],
     "createdAt": "2024-03-16"
+  },
+  {
+    "id": "roasted-beet-burrata-salad",
+    "title": "Roasted Beet & Burrata Salad",
+    "description": "Charred citrus beets layered with creamy burrata, pistachio dust, and arugula.",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Californian",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 35,
+    "totalTime": 50,
+    "servings": 4,
+    "ingredients": [
+      { "name": "golden beets", "amount": 3, "unit": "piece", "notes": "peeled" },
+      { "name": "blood orange", "amount": 1, "unit": "piece", "notes": "juiced" },
+      { "name": "burrata", "amount": 2, "unit": "ball" },
+      { "name": "arugula", "amount": 2, "unit": "cup" },
+      { "name": "pistachios", "amount": 0.25, "unit": "cup", "notes": "crushed" },
+      { "name": "olive oil", "amount": 3, "unit": "tbsp" },
+      { "name": "balsamic vinegar", "amount": 1, "unit": "tbsp" },
+      { "name": "thyme", "amount": 1, "unit": "tsp", "notes": "fresh leaves" }
+    ],
+    "instructions": [
+      "Roast sliced beets with olive oil, salt, pepper, and thyme at 200°C for 30-35 minutes.",
+      "Whisk blood orange juice with balsamic, remaining oil, and a pinch of salt.",
+      "Layer arugula, roasted beets, torn burrata, pistachios, and drizzle the citrus dressing."
+    ],
+    "nutrition": { "calories": 340, "protein": 12, "carbs": 24, "fat": 22, "fiber": 4, "sodium": 360 },
+    "dietary": ["vegetarian", "gluten-free"],
+    "tags": ["salad", "brunch"],
+    "coreIngredients": ["beets", "burrata", "arugula"],
+    "createdAt": "2024-03-18"
+  },
+  {
+    "id": "smoky-chickpea-tomato-stew",
+    "title": "Smoky Chickpea & Tomato Stew",
+    "description": "Slow-simmered tomatoes, chickpeas, and smoked paprika finished with lemon yogurt.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Mediterranean",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 30,
+    "totalTime": 45,
+    "servings": 4,
+    "ingredients": [
+      { "name": "chickpeas", "amount": 2, "unit": "can", "notes": "drained" },
+      { "name": "crushed tomatoes", "amount": 1, "unit": "can" },
+      { "name": "smoked paprika", "amount": 1.5, "unit": "tsp" },
+      { "name": "cumin", "amount": 1, "unit": "tsp" },
+      { "name": "garlic", "amount": 4, "unit": "clove", "notes": "minced" },
+      { "name": "onion", "amount": 1, "unit": "piece", "notes": "diced" },
+      { "name": "vegetable broth", "amount": 2, "unit": "cup" },
+      { "name": "baby spinach", "amount": 3, "unit": "cup" },
+      { "name": "lemon", "amount": 1, "unit": "piece" },
+      { "name": "greek yogurt", "amount": 0.5, "unit": "cup", "notes": "optional topping" }
+    ],
+    "instructions": [
+      "Sauté onion and garlic in olive oil until translucent.",
+      "Stir in paprika, cumin, chickpeas, tomatoes, and broth; simmer 20 minutes.",
+      "Fold in spinach to wilt, finish with lemon juice, and serve with yogurt drizzle."
+    ],
+    "nutrition": { "calories": 310, "protein": 14, "carbs": 42, "fat": 9, "fiber": 10, "sodium": 540 },
+    "dietary": ["vegetarian", "gluten-free"],
+    "tags": ["stew", "one-pot"],
+    "coreIngredients": ["chickpeas", "tomato", "paprika"],
+    "createdAt": "2024-03-19"
+  },
+  {
+    "id": "leek-gruyere-tart",
+    "title": "Leek & Gruyère Tart",
+    "description": "Buttery puff pastry filled with caramelized leeks, thyme, and aged Gruyère.",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "French",
+    "difficulty": "medium",
+    "prepTime": 20,
+    "cookTime": 30,
+    "totalTime": 50,
+    "servings": 6,
+    "ingredients": [
+      { "name": "puff pastry", "amount": 1, "unit": "sheet", "notes": "thawed" },
+      { "name": "leeks", "amount": 3, "unit": "piece", "notes": "sliced" },
+      { "name": "gruyere cheese", "amount": 1, "unit": "cup", "notes": "shredded" },
+      { "name": "eggs", "amount": 3, "unit": "piece" },
+      { "name": "heavy cream", "amount": 0.5, "unit": "cup" },
+      { "name": "thyme", "amount": 1, "unit": "tsp" },
+      { "name": "butter", "amount": 2, "unit": "tbsp" },
+      { "name": "dijon mustard", "amount": 1, "unit": "tbsp" }
+    ],
+    "instructions": [
+      "Cook leeks with butter and thyme until jammy.",
+      "Blind bake puff pastry in tart pan for 10 minutes.",
+      "Whisk eggs, cream, Dijon, fold in Gruyère and leeks, bake until set and golden."
+    ],
+    "nutrition": { "calories": 420, "protein": 15, "carbs": 24, "fat": 30, "fiber": 2, "sodium": 480 },
+    "dietary": ["vegetarian"],
+    "tags": ["brunch", "bake"],
+    "coreIngredients": ["leeks", "gruyere", "puff pastry"],
+    "createdAt": "2024-03-20"
+  },
+  {
+    "id": "coconut-lime-poached-chicken",
+    "title": "Coconut & Lime Poached Chicken",
+    "description": "Fragrant coconut milk broth with lemongrass-poached chicken and charred snap peas.",
+    "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80",
+    "cuisine": "Thai",
+    "difficulty": "medium",
+    "prepTime": 15,
+    "cookTime": 25,
+    "totalTime": 40,
+    "servings": 4,
+    "ingredients": [
+      { "name": "coconut milk", "amount": 2, "unit": "cup" },
+      { "name": "chicken breast", "amount": 600, "unit": "g" },
+      { "name": "lemongrass", "amount": 2, "unit": "stalk", "notes": "smashed" },
+      { "name": "lime leaves", "amount": 4, "unit": "piece" },
+      { "name": "ginger", "amount": 2, "unit": "tbsp", "notes": "sliced" },
+      { "name": "snap peas", "amount": 2, "unit": "cup" },
+      { "name": "fish sauce", "amount": 1, "unit": "tbsp" },
+      { "name": "lime", "amount": 1, "unit": "piece", "notes": "juice + zest" },
+      { "name": "cilantro", "amount": 0.25, "unit": "cup", "notes": "chopped" }
+    ],
+    "instructions": [
+      "Simmer coconut milk with lemongrass, lime leaves, ginger, and fish sauce.",
+      "Add chicken breasts, poach gently until cooked through, then shred.",
+      "Blister snap peas separately, add to broth with lime juice and cilantro."
+    ],
+    "nutrition": { "calories": 380, "protein": 34, "carbs": 10, "fat": 22, "fiber": 2, "sodium": 540 },
+    "dietary": ["gluten-free"],
+    "tags": ["soup", "light"],
+    "coreIngredients": ["coconut milk", "chicken", "lime"],
+    "createdAt": "2024-03-21"
   }
 ]
