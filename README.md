@@ -1,6 +1,6 @@
 # Kedars Smart Recipe Generator
 
-Smart Gourmet Kitchen is a pantry-first recipe coach. Type or photograph what you have, layer on dietary filters, and the app recommends chef-style dishes with nutrition, substitutions, and serving controls—all wrapped in a premium, mobile-ready interface.
+Smart Gourmet Kitchen is a pantry-first recipe coach. Type or photograph what you have, layer on dietary filters, and the app recommends chef-style dishes with nutrition, substitutions, and serving controls.
 
 ## 1. Working Application URL
 | Environment | URL |
@@ -26,7 +26,7 @@ npm run preview -- --host
 ```
 
 ## 5. Approach Summary
-The build centers on a clean data pipeline and lightweight state management so every feature speaks the same language. Recipes, substitutions, nutrition, and presets live in local JSON and are surfaced through a `recipeService`, which keeps the client deterministic and production-ready. Ingredient entry happens via chips, navbar quick toggles, and an image-upload hook that can be swapped for a live endpoint; the `FilterContext` ensures all filters (dietary, cuisine, time, difficulty) stay in sync across Home and Search. Matching logic weights core ingredients, time, dietary compliance, and even substitution availability so results feel curated rather than random. Detail pages expose servings, nutrition, and related dishes, while favorites/ratings persist in LocalStorage to avoid backend dependencies. Tailwind drives the retro-meets-modern UI with dedicated components for skeletons, empty states, and marquee motion, ensuring the experience stays cohesive on mobile and desktop. Finally, documentation, deployment notes, and build scripts follow the assignment’s submission checklist—no extra dependencies, no stray build artifacts, and a clear path to Vercel/Netlify.
+The project centers on a clean data pipeline and lightweight state management so every feature speaks the same language. Recipes, substitutions, nutrition, and presets live in local JSON and are surfaced through a `recipeService`, which keeps the client deterministic and production-ready. Ingredient entry happens via chips, navbar quick toggles, and an image-upload hook that can be swapped for a live endpoint; the `FilterContext` ensures all filters (dietary, cuisine, time, difficulty) stay in sync across Home and Search. Matching logic weights core ingredients, time, dietary compliance, and even substitution availability so results feel curated rather than random. Detail pages expose servings, nutrition, and related dishes, while favorites/ratings persist in LocalStorage to avoid backend dependencies. Tailwind drives the retro-meets-modern UI with dedicated components for skeletons, empty states, and marquee motion, ensuring the experience stays cohesive on mobile and desktop. Finally, documentation, deployment notes, and build scripts follow the assignment’s submission checklist—no extra dependencies, no stray build artifacts, and deployed on vercel.
 
 ## 6. Project Structure
 ```
