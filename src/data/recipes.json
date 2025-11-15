@@ -1667,5 +1667,132 @@
     "tags": ["soup", "light"],
     "coreIngredients": ["coconut milk", "chicken", "lime"],
     "createdAt": "2024-03-21"
+  },
+  {
+    "id": "charred-broccolini-soba",
+    "title": "Charred Broccolini Soba Bowls",
+    "description": "Toasted sesame soba with blistered broccolini, miso dressing, and soft-boiled eggs.",
+    "image": "/images/recipes/charred-broccolini-soba.jpg",
+    "cuisine": "Japanese",
+    "difficulty": "medium",
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "ingredients": [
+      { "name": "soba noodles", "amount": 300, "unit": "g" },
+      { "name": "broccolini", "amount": 2, "unit": "bunch" },
+      { "name": "sesame oil", "amount": 2, "unit": "tbsp" },
+      { "name": "white miso", "amount": 2, "unit": "tbsp" },
+      { "name": "rice vinegar", "amount": 1.5, "unit": "tbsp" },
+      { "name": "soy sauce", "amount": 2, "unit": "tbsp" },
+      { "name": "soft boiled eggs", "amount": 4, "unit": "piece" },
+      { "name": "toasted sesame seeds", "amount": 2, "unit": "tbsp" }
+    ],
+    "instructions": [
+      "Cook soba according to package instructions, rinse under cold water, and toss with sesame oil.",
+      "Char broccolini in a hot pan until lightly blistered.",
+      "Whisk miso, rice vinegar, soy sauce, and a splash of noodle water. Toss bowls with noodles, broccolini, dressing, eggs, and sesame seeds."
+    ],
+    "nutrition": { "calories": 420, "protein": 22, "carbs": 55, "fat": 16, "fiber": 6, "sodium": 820 },
+    "dietary": ["vegetarian"],
+    "tags": ["noodles", "weeknight"],
+    "coreIngredients": ["soba noodles", "broccolini", "miso"],
+    "createdAt": "2024-03-22"
+  },
+  {
+    "id": "citrus-herb-seabass",
+    "title": "Citrus Herb Seabass",
+    "description": "Pan-seared seabass with charred fennel, cara cara oranges, and basil oil.",
+    "image": "/images/recipes/citrus-herb-seabass.jpg",
+    "cuisine": "Mediterranean",
+    "difficulty": "medium",
+    "prepTime": 15,
+    "cookTime": 12,
+    "totalTime": 27,
+    "servings": 2,
+    "ingredients": [
+      { "name": "seabass fillets", "amount": 2, "unit": "piece" },
+      { "name": "fennel bulb", "amount": 1, "unit": "piece", "notes": "sliced" },
+      { "name": "cara cara orange", "amount": 1, "unit": "piece", "notes": "segmented" },
+      { "name": "olive oil", "amount": 3, "unit": "tbsp" },
+      { "name": "basil", "amount": 0.25, "unit": "cup" },
+      { "name": "garlic", "amount": 2, "unit": "clove" },
+      { "name": "butter", "amount": 1, "unit": "tbsp" }
+    ],
+    "instructions": [
+      "Sear fennel in olive oil until caramelized and tender.",
+      "Pat seabass dry, season, and cook skin-side down until crisp; baste with butter and garlic.",
+      "Serve fillets over fennel with citrus segments and basil oil."
+    ],
+    "nutrition": { "calories": 360, "protein": 32, "carbs": 12, "fat": 22, "fiber": 3, "sodium": 360 },
+    "dietary": ["gluten-free"],
+    "tags": ["seafood", "dinner"],
+    "coreIngredients": ["seabass", "fennel", "citrus"],
+    "createdAt": "2024-03-22"
+  },
+  {
+    "id": "sweet-potato-chipotle-tacos",
+    "title": "Sweet Potato Chipotle Tacos",
+    "description": "Roasted sweet potatoes, black beans, and charred corn tucked into warm tortillas.",
+    "image": "/images/recipes/sweet-potato-tacos.jpg",
+    "cuisine": "Mexican",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "cookTime": 25,
+    "totalTime": 40,
+    "servings": 4,
+    "ingredients": [
+      { "name": "sweet potatoes", "amount": 2, "unit": "piece", "notes": "diced" },
+      { "name": "chipotle in adobo", "amount": 1, "unit": "tbsp" },
+      { "name": "black beans", "amount": 1, "unit": "can", "notes": "rinsed" },
+      { "name": "corn kernels", "amount": 1, "unit": "cup" },
+      { "name": "tortillas", "amount": 8, "unit": "piece" },
+      { "name": "lime", "amount": 1, "unit": "piece" },
+      { "name": "cotija cheese", "amount": 0.25, "unit": "cup" },
+      { "name": "cilantro", "amount": 0.25, "unit": "cup" }
+    ],
+    "instructions": [
+      "Roast diced sweet potatoes with chipotle, oil, and salt until tender.",
+      "Char corn in a skillet, then toss with black beans and a squeeze of lime.",
+      "Warm tortillas and fill with sweet potatoes, beans, corn, cotija, and cilantro."
+    ],
+    "nutrition": { "calories": 390, "protein": 12, "carbs": 58, "fat": 12, "fiber": 11, "sodium": 420 },
+    "dietary": ["vegetarian", "gluten-free"],
+    "tags": ["tacos", "weeknight"],
+    "coreIngredients": ["sweet potatoes", "black beans", "tortillas"],
+    "createdAt": "2024-03-22"
+  },
+  {
+    "id": "espresso-chili-braised-beef",
+    "title": "Espresso Chili Braised Beef",
+    "description": "Fork-tender beef chuck braised with espresso, ancho chili, and dark chocolate.",
+    "image": "/images/recipes/espresso-chili-beef.jpg",
+    "cuisine": "Latin Fusion",
+    "difficulty": "hard",
+    "prepTime": 25,
+    "cookTime": 150,
+    "totalTime": 175,
+    "servings": 6,
+    "ingredients": [
+      { "name": "beef chuck", "amount": 1.3, "unit": "kg" },
+      { "name": "espresso", "amount": 1, "unit": "cup" },
+      { "name": "ancho chili powder", "amount": 1.5, "unit": "tbsp" },
+      { "name": "tomato paste", "amount": 2, "unit": "tbsp" },
+      { "name": "dark chocolate", "amount": 30, "unit": "g" },
+      { "name": "beef stock", "amount": 3, "unit": "cup" },
+      { "name": "onion", "amount": 1, "unit": "piece", "notes": "diced" },
+      { "name": "garlic", "amount": 4, "unit": "clove" }
+    ],
+    "instructions": [
+      "Sear beef until deeply browned, then remove from pot.",
+      "Sauté onions/garlic, add tomato paste, chili powder, espresso, chocolate, and stock.",
+      "Return beef, cover, and braise at 160°C for 2.5 hours until shreddable."
+    ],
+    "nutrition": { "calories": 510, "protein": 42, "carbs": 14, "fat": 30, "fiber": 3, "sodium": 640 },
+    "dietary": [],
+    "tags": ["braise", "entertaining"],
+    "coreIngredients": ["beef", "espresso", "ancho chili"],
+    "createdAt": "2024-03-23"
   }
 ]

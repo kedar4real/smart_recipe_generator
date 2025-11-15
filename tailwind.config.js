@@ -28,6 +28,28 @@ export default {
           800: '#472c14',
           900: '#2d1a0b',
         },
+        forest: {
+          50: '#edf6f1',
+          100: '#cfe6da',
+          200: '#a5d0bb',
+          300: '#6daf96',
+          400: '#418a73',
+          500: '#2c6a57',
+          600: '#215846',
+          700: '#164131',
+          800: '#0d2b21',
+          900: '#071911',
+        },
+        brandAccent: {
+          50: '#fff3ea',
+          100: '#ffd9c2',
+          200: '#ffb183',
+          300: '#ff9159',
+          400: '#f47337',
+          500: '#e35724',
+          600: '#c3441c',
+          700: '#8c3014',
+        },
         mint: {
           100: '#d0f3ec',
           300: '#a5e4d8',
@@ -45,12 +67,14 @@ export default {
       },
       boxShadow: {
         retro: '0 25px 50px -12px rgba(36, 22, 22, 0.4)',
-        card: '0 20px 40px rgba(47, 30, 10, 0.18)',
+        card: '0 32px 60px rgba(7, 25, 17, 0.25)',
+        subtle: '0 20px 40px rgba(6, 21, 17, 0.16)',
       },
       animation: {
         'fade-in': 'fadeIn 0.45s ease forwards',
         'slide-up': 'slideUp 0.35s ease forwards',
         'float': 'float 6s ease-in-out infinite',
+        marquee: 'marquee 18s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -65,6 +89,10 @@ export default {
           '0%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-6px)' },
           '100%': { transform: 'translateY(0px)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },

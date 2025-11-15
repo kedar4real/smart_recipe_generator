@@ -10,9 +10,10 @@ const navLinks = [
 ]
 
 const dietaryQuickToggles = [
-  { id: 'vegetarian', label: 'Veg', color: '#65A30D' },
-  { id: 'vegan', label: 'Vegan', color: '#0EA5E9' },
-  { id: 'gluten-free', label: 'GF', color: '#F97316' },
+  { id: 'vegetarian', label: 'Veg', color: '#84cc16' },
+  { id: 'vegan', label: 'Vegan', color: '#22d3ee' },
+  { id: 'gluten-free', label: 'GF', color: '#fb923c' },
+  { id: 'dairy-free', label: 'Dairy', color: '#facc15' },
 ]
 
 export function Navbar() {
@@ -29,13 +30,13 @@ export function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-purple-900/40 bg-gradient-to-r from-purple-600/90 via-purple-700/95 to-purple-900/95 text-white shadow-[0_18px_45px_rgba(35,0,70,0.35)] backdrop-blur-sm">
-      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-4 px-4 py-3 sm:px-8">
-        <div className="flex min-w-[220px] items-center gap-3">
+    <header className="sticky top-0 z-40 w-full border-b border-white/5 bg-[#06140f]/95 text-white shadow-[0_20px_40px_rgba(5,12,10,0.45)] backdrop-blur-sm">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-4 sm:px-8 lg:grid lg:grid-cols-[auto,1fr,auto] lg:items-center">
+        <div className="flex items-center gap-3">
           <img
             src="/images/logo.svg"
             alt="Kedar Mashalkar logo"
-            className="h-10 w-10 rounded-2xl border border-white/30 bg-white/10 p-1 shadow-lg"
+            className="h-11 w-11 rounded-2xl border border-white/20 bg-white/5 p-2 shadow-lg"
           />
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.5em] text-amber-100/80">
@@ -47,7 +48,7 @@ export function Navbar() {
           </div>
         </div>
 
-        <nav className="flex flex-wrap items-center gap-2 text-sm font-semibold text-white/80">
+        <nav className="order-3 flex flex-wrap items-center justify-center gap-2 text-sm font-semibold text-white/80 lg:order-none lg:justify-center">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -55,7 +56,7 @@ export function Navbar() {
               className={({ isActive }) =>
                 `rounded-full px-4 py-2 transition ${
                   isActive
-                    ? 'bg-white text-purple-800 shadow-lg'
+                    ? 'bg-white text-forest-700 shadow-lg'
                     : 'hover:bg-white/10 hover:text-white'
                 }`
               }
@@ -65,49 +66,51 @@ export function Navbar() {
           ))}
         </nav>
 
-        <form
-          onSubmit={handleSearchSubmit}
-          className="flex min-w-[220px] flex-1 items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm shadow-inner transition focus-within:border-white/60"
-        >
-          <img src="/images/icons/sparkle.svg" alt="" className="h-5 w-5 opacity-80" />
-          <input
-            type="text"
-            value={searchValue}
-            onChange={(event) => setSearchValue(event.target.value)}
-            className="flex-1 border-none bg-transparent text-white placeholder:text-white/70 focus:outline-none"
-            placeholder="Drop pantry items, press Enter..."
-          />
-          <button
-            type="submit"
-            className="rounded-full bg-white/90 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-purple-800 transition hover:bg-white"
+        <div className="order-2 flex flex-col gap-3 text-xs font-semibold text-white lg:order-none lg:items-end">
+          <form
+            onSubmit={handleSearchSubmit}
+            className="flex w-full flex-wrap items-center gap-3 rounded-2xl border border-white/20 bg-white/5 px-4 py-2 text-sm shadow-inner transition focus-within:border-brandAccent-200 lg:w-[320px]"
           >
-            Search
-          </button>
-        </form>
-
-        <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-white">
-          {dietaryQuickToggles.map((toggle) => {
-            const isActive = filters.dietaryTags.includes(toggle.id)
-            return (
-              <button
-                key={toggle.id}
-                type="button"
-                onClick={() => toggleDietary(toggle.id)}
-                className={`flex items-center gap-2 rounded-full border px-3 py-1 transition-all duration-200 ${
-                  isActive
-                    ? 'border-white/60 bg-white/90 text-purple-900'
-                    : 'border-white/20 text-white/80 hover:border-white/50 hover:bg-white/10'
-                }`}
-              >
-                <span
-                  className="h-2.5 w-2.5 rounded-full"
-                  style={{ backgroundColor: toggle.color }}
-                  aria-hidden="true"
-                />
-                {toggle.label}
-              </button>
-            )
-          })}
+            <img src="/images/icons/sparkle.svg" alt="" className="h-5 w-5 opacity-80" />
+            <input
+              type="text"
+              value={searchValue}
+              onChange={(event) => setSearchValue(event.target.value)}
+              className="min-w-0 flex-1 border-none bg-transparent text-white placeholder:text-white/60 focus:outline-none"
+              placeholder="Drop pantry items, press Enter..."
+            />
+            <button
+              type="submit"
+              className="shrink-0 rounded-full bg-brandAccent-400 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-[#150a04] transition hover:-translate-y-0.5 hover:bg-brandAccent-300"
+            >
+              Search
+            </button>
+          </form>
+          <div className="flex flex-wrap items-center justify-start gap-2 text-white/80 lg:justify-end">
+            {dietaryQuickToggles.map((toggle) => {
+              const isActive = filters.dietaryTags.includes(toggle.id)
+              return (
+                <button
+                  key={toggle.id}
+                  type="button"
+                  aria-pressed={isActive}
+                  onClick={() => toggleDietary(toggle.id)}
+                  className={`flex items-center gap-2 rounded-full border px-3 py-1 transition-all duration-200 ${
+                    isActive
+                      ? 'border-white/60 bg-white/90 text-forest-900'
+                      : 'border-white/20 text-white/80 hover:border-white/45 hover:bg-white/10'
+                  }`}
+                >
+                  <span
+                    className="h-2.5 w-2.5 rounded-full"
+                    style={{ backgroundColor: toggle.color }}
+                    aria-hidden="true"
+                  />
+                  {toggle.label}
+                </button>
+              )
+            })}
+          </div>
         </div>
       </div>
     </header>

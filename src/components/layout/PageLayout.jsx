@@ -4,7 +4,7 @@ import { AboutSection } from './AboutSection.jsx'
 
 export function PageLayout({ children }) {
   return (
-    <div className="min-h-screen text-secondary-900 flex flex-col">
+    <div className="flex min-h-screen flex-col text-white">
       <div className="flex-1">
         <Navbar />
         <main className="flex-1 w-full px-4 py-10 sm:px-8">

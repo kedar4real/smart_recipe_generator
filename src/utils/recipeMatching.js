@@ -1,4 +1,5 @@
 import recipes from '@/data/recipes.json'
+import { findSubstitutions } from '@/utils/substitutionEngine.js'
 
 const difficultyRank = {
   easy: 1,
@@ -13,7 +14,8 @@ function normalizeList(list = []) {
 }
 
 export function scoreRecipeMatch(recipe, availableIngredients = [], options = {}) {
-  const normalizedIngredients = new Set(normalizeList(availableIngredients))
+  const normalizedList = normalizeList(availableIngredients)
+  const normalizedIngredients = new Set(normalizedList)
   const recipeIngredients = (recipe.ingredients || []).map((ingredient) =>
     ingredient.name.trim().toLowerCase()
   )
@@ -23,13 +25,48 @@ export function scoreRecipeMatch(recipe, availableIngredients = [], options = {}
 
   const overlapRatio =
     recipeIngredients.length > 0 ? matchedIngredients.length / recipeIngredients.length : 0
-  let score = overlapRatio * 60
+  let score = overlapRatio * 50
   const explanationParts = []
 
   if (overlapRatio > 0) {
     explanationParts.push(`Matched ${matchedIngredients.length} ingredients`)
   } else {
     explanationParts.push('No direct ingredient matches')
+  }
+
+  const coreIngredients = recipe.coreIngredients?.map((name) => name.toLowerCase()) || []
+  if (coreIngredients.length > 0) {
+    const coreMatches = coreIngredients.filter((item) => normalizedIngredients.has(item))
+    const coreRatio = coreMatches.length / coreIngredients.length
+    score += coreRatio * 20
+    if (coreRatio === 1) {
+      explanationParts.push('All key ingredients ready')
+    } else if (coreRatio > 0) {
+      explanationParts.push(`Key ingredients matched: ${coreMatches.length}/${coreIngredients.length}`)
+    } else {
+      explanationParts.push('Missing some key ingredients')
+    }
+  }
+
+  const substitutionHints = missingIngredients
+    .map((ingredient) => {
+      const options = findSubstitutions(ingredient, normalizedList)
+      const availableSwap = options.find((option) => option.isAvailable)
+      return availableSwap
+        ? { ingredient, substitute: availableSwap.name, notes: availableSwap.notes }
+        : null
+    })
+    .filter(Boolean)
+
+  if (substitutionHints.length > 0) {
+    const bonus = Math.min(15, substitutionHints.length * 3)
+    score += bonus
+    explanationParts.push('Substitutions available')
+  }
+
+  if (missingIngredients.length > 0) {
+    const penalty = Math.max(0, missingIngredients.length - substitutionHints.length) * 2.5
+    score -= penalty
   }
 
   if (options.maxTime && recipe.totalTime <= options.maxTime) {
@@ -70,6 +107,7 @@ export function scoreRecipeMatch(recipe, availableIngredients = [], options = {}
     score,
     matchedIngredients,
     missingIngredients,
+    substitutionHints,
     explanation: explanationParts.join(' · '),
   }
 }

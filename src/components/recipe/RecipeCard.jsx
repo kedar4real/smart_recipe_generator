@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useRatings } from '@/hooks/useRatings.js'
+import { useRevealOnScroll } from '@/hooks/useRevealOnScroll.js'
 
 const matchBadgeStyles = (score = 0) => {
   if (score >= 90) return 'bg-mint-300 text-cocoa-900'
@@ -8,13 +9,14 @@ const matchBadgeStyles = (score = 0) => {
   return 'bg-secondary-100 text-secondary-700'
 }
 
-export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite }) {
+export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite, revealDelay = 0 }) {
   const { getRating, setRating } = useRatings()
   const userRating = getRating(recipe.id)
   const baseRating = recipe.rating || 4.5
   const displayRating = userRating || baseRating
   const [imageSrc, setImageSrc] = useState(recipe.image)
   const calories = recipe.nutrition?.calories
+  const reveal = useRevealOnScroll(revealDelay)
 
   const handleFavoriteClick = (event) => {
     event.preventDefault()
@@ -23,16 +25,20 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
   }
 
   return (
-    <article className="group overflow-hidden rounded-[28px] border border-[#f4e6d4] bg-[#fffaf3] p-5 shadow-[0_25px_55px_rgba(32,15,4,0.12)] transition-all duration-200 ease-out hover:-translate-y-1 hover:scale-[1.01] hover:shadow-[0_35px_70px_rgba(26,12,2,0.18)]">
+    <article
+      ref={reveal.ref}
+      style={reveal.style}
+      className="group overflow-hidden rounded-[32px] border border-[#f0ddca] bg-[#fffaf3] p-5 shadow-card transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_45px_90px_rgba(7,25,17,0.25)]"
+    >
       <Link
         to={`/recipes/${recipe.id}`}
         className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-200 focus-visible:ring-offset-2 focus-visible:ring-offset-[#fffaf3]"
       >
-        <div className="relative overflow-hidden rounded-3xl">
+        <div className="relative overflow-hidden rounded-[28px]">
           <img
             src={imageSrc}
             alt={recipe.title}
-            className="h-56 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+            className="h-64 w-full object-cover transition duration-700 ease-out group-hover:scale-[1.05]"
             loading="lazy"
             onError={() => setImageSrc('/images/recipes/fallback.jpg')}
           />
@@ -59,13 +65,13 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
           </button>
         </div>
 
-        <div className="space-y-4 px-1 py-4">
+        <div className="space-y-4 px-1 py-5">
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="text-xs uppercase tracking-[0.35em] text-secondary-400">
                 {recipe.cuisine}
               </p>
-              <h3 className="mt-1 text-xl font-semibold text-secondary-900">{recipe.title}</h3>
+              <h3 className="mt-1 text-2xl font-semibold text-secondary-900">{recipe.title}</h3>
             </div>
             <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-secondary-800">
               {recipe.difficulty}
@@ -97,7 +103,7 @@ export function RecipeCard({ recipe, matchScore, isFavorite, onToggleFavorite })
               type="button"
               onClick={() => setRating(recipe.id, value)}
               className={`text-lg transition ${
-                value <= displayRating ? 'text-primary-500' : 'text-secondary-300'
+                value <= displayRating ? 'text-brandAccent-400' : 'text-secondary-200'
               } hover:scale-110`}
               aria-label={`Rate ${value} star${value > 1 ? 's' : ''}`}
             >

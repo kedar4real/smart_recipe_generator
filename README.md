@@ -1,37 +1,74 @@
-# Kedar Mashalkar's Smart Gourmet Kitchen
+# Kedars Smart Recipe Generator
 
-Retro-inspired recipe discovery app that matches whatever is in your pantry with curated dishes, ingredient recognition, and smart substitution tips.
+Smart Gourmet Kitchen is a pantry-first recipe coach. Type or photograph what you have, layer on dietary filters, and the app recommends chef-style dishes with nutrition, substitutions, and serving controls—all wrapped in a premium, mobile-ready interface.
 
 ## 1. Working Application URL
-| Environment | URL | Notes |
-|-------------|-----|-------|
-| Local Dev | http://localhost:5173 | Run `npm install` then `npm run dev -- --host` to access from your browser. |
-
-> The project is framework-agnostic and can be hosted on any static provider (Vercel/Netlify). Instructions for hosting are in `docs/deployment.md`.
+| Environment | URL |
+|-------------|-----|
+| **Live** | https://kedarssmartgourmetkitchen-git-main-kedar-mashalkars-projects.vercel.app |
+| **Local** | http://localhost:5173 |
 
 ## 2. Source Code
-Public GitHub repository (branch `main`): https://github.com/kedar4real/smart_recipe_generator
+GitHub (branch `main`): https://github.com/kedar4real/smart_recipe_generator.git
 
-### Running Locally
+## 3. Running Locally
 ```bash
 git clone https://github.com/kedar4real/smart_recipe_generator.git
 cd smart_recipe_generator
 npm install
-npm run dev
+npm run dev -- --host
 ```
 
-### Production Build
+## 4. Production Build
 ```bash
 npm run build
 npm run preview -- --host
 ```
 
-## 3. Approach Summary (≈180 words)
-I treated this like a scrappy kitchen companion: keep it friendly, fast, and honest about what’s in the pantry. First step was outlining the data sources (`recipes.json`, substitutions, presets) so every feature—chips, filters, detail view—talks to the same recipe service. From there I wired a shared `FilterContext` so quick toggles in the navbar immediately influence Home and Search, which keeps the whole experience feeling intentional. Photo recognition is stubbed but lives behind a service hook, so flipping to a real endpoint later is painless. The “smart suggestions” section was important; it nudges people toward the one ingredient that unlocks more dishes, which mirrors how I actually cook. Visual polish leans on Tailwind with a few helper classes (`retro-card`, `EmptyState`) to stay consistent. LocalStorage hooks handle favorites and ratings so there’s no backend dependency, and the detail page has proper substitutions, nutrition, and loading states. Update the docs when something changes, run `npm run build`, and keep `node_modules`/`dist` out of git—that’s the whole workflow.
+## 5. Approach Summary
+The build centers on a clean data pipeline and lightweight state management so every feature speaks the same language. Recipes, substitutions, nutrition, and presets live in local JSON and are surfaced through a `recipeService`, which keeps the client deterministic and production-ready. Ingredient entry happens via chips, navbar quick toggles, and an image-upload hook that can be swapped for a live endpoint; the `FilterContext` ensures all filters (dietary, cuisine, time, difficulty) stay in sync across Home and Search. Matching logic weights core ingredients, time, dietary compliance, and even substitution availability so results feel curated rather than random. Detail pages expose servings, nutrition, and related dishes, while favorites/ratings persist in LocalStorage to avoid backend dependencies. Tailwind drives the retro-meets-modern UI with dedicated components for skeletons, empty states, and marquee motion, ensuring the experience stays cohesive on mobile and desktop. Finally, documentation, deployment notes, and build scripts follow the assignment’s submission checklist—no extra dependencies, no stray build artifacts, and a clear path to Vercel/Netlify.
 
-## Additional Docs
-- `docs/image-api.md` – API contract for the image recognition endpoint.
-- `docs/deployment.md` – Vercel/Netlify instructions.
+## 6. Project Structure
+```
+├── docs/
+├── public/
+│   └── images/
+│       └── screenshots/
+├── src/
+│   ├── components/
+│   ├── contexts/
+│   ├── hooks/
+│   ├── pages/
+│   ├── services/
+│   ├── utils/
+│   └── data/
+├── README.md
+└── package.json
+```
+
+## Requirement Coverage
+| Requirement | Where/How |
+|-------------|-----------|
+| Ingredient input & dietary toggles | Navbar quick toggles, `IngredientInput.jsx` |
+| Image ingredient recognition | `ImageUpload.jsx` + `useImageRecognition` stub (swap to real API anytime) |
+| Recipe generation & scoring | `recipes.json` (38 recipes) + `recipeMatching.js` with core-weighting + substitution hints |
+| Nutrition, instructions, serving sizes | Included in dataset and surfaced on Recipe Detail |
+| Filters & customization | `RecipeFilters.jsx`, `FilterContext`, serving adjuster |
+| Favorites, ratings, smart suggestions | `useFavorites`, `useRatings`, `SmartSuggestions.jsx` |
+| Substitution engine | `substitutionEngine.js` and hints from `recipeMatching` |
+| Hosting readiness | Static Vite build + Vercel URL above |
+
+Additional Docs:
+- `docs/image-api.md`
+- `docs/deployment.md`
+
+## Screenshots
+![Home](public/images/screenshots/homepage.png)
+![Search](public/images/screenshots/search.png)
+![Recipe Grid](public/images/screenshots/recipes.png)
+![Favorites](public/images/screenshots/favorites.png)
+
+> Raw files live in `public/images/screenshots/`. Update them whenever you refresh the UI to keep documentation in sync.
 
 ## License
 Open-source for assignment/review purposes.

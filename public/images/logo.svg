@@ -1,14 +1,24 @@
-<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="120" height="120" rx="24" fill="url(#paint0_linear)" />
-  <path d="M27 62c0 18.2 15.4 33 33 33s33-14.8 33-33" stroke="white" stroke-width="5" stroke-linecap="round" />
-  <path d="M24 58h72" stroke="white" stroke-width="5" stroke-linecap="round" />
-  <path d="M47 41c0-6 5-11 13-11s13 5 13 11" stroke="white" stroke-width="5" stroke-linecap="round" />
-  <path d="M38 46c0-4 4-8 9-8" stroke="white" stroke-width="4" stroke-linecap="round" />
-  <path d="M69 33c3-4 8-6 12-6" stroke="white" stroke-width="4" stroke-linecap="round" />
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <rect width="140" height="140" rx="36" fill="#04100B" />
+  <circle cx="70" cy="70" r="50" stroke="#F4C47A" stroke-width="3" opacity="0.4" />
+  <path
+    d="M42 60c18-28 48-32 60-20 12 12 4 30-14 42-18 12-45 20-46-2-0.5-6 0.5-12 3-20z"
+    fill="#F7B35A"
+    opacity="0.28"
+  />
+  <path
+    d="M50 92c0-24 18-48 42-56 10-3.4 20-3.6 26 2s6 16-2 26c-15 18-45 34-66 34z"
+    fill="#F7A64E"
+    opacity="0.6"
+  />
+  <path
+    d="M40 86c4 10 14 20 30 24 16 4.1 32-1.4 42-8.5 10-7.1 15-15.5 14-24.5-1-9-7-14-16-14-28 0-62 18-70 23z"
+    fill="url(#grainGrad)"
+  />
   <defs>
-    <linearGradient id="paint0_linear" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F5A623" />
-      <stop offset="1" stop-color="#F76B1C" />
+    <linearGradient id="grainGrad" x1="40" y1="60" x2="110" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FEE0B0" />
+      <stop offset="1" stop-color="#F28D34" />
     </linearGradient>
   </defs>
 </svg>

@@ -32,13 +32,14 @@ export function RecipeGrid({
 
   return (
     <div className="retro-grid">
-      {results.map((result) => (
+      {results.map((result, index) => (
         <RecipeCard
           key={result.recipe.id}
           recipe={result.recipe}
           matchScore={result.score}
           isFavorite={favorites.includes(result.recipe.id)}
           onToggleFavorite={onToggleFavorite}
+          revealDelay={index * 70}
         />
       ))}
     </div>
@@ -47,6 +48,6 @@ export function RecipeGrid({
 
 function SkeletonCard() {
   return (
-    <div className="h-80 rounded-[28px] border border-white/40 bg-white/70 shadow-inner animate-pulse" />
+    <div className="h-80 rounded-[32px] border border-white/10 bg-white/10 shadow-inner animate-pulse" />
   )
 }
